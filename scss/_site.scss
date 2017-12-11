@@ -85,12 +85,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   margin: 0;
   padding: 0;
   flex-basis: 33.33333%;
-  height: 250px;
+  height: 256px;
 }
 
 .box1 {
   flex: 0 0 66.66666%;
-  height: 500px;
+  height: 512px;
   background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
   background-size: 1200% 1200%;
   -webkit-animation: dboxRainbow 30s ease infinite;
@@ -136,11 +136,11 @@ a:hover, a:active, a:focus {
 }
 
 .box2 {
-  height: 250px;
+  height: 256px;
 }
 
 .box3 {
-  height: 250px;
+  height: 256px;
 }
 
 li {
@@ -151,6 +151,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.875rem;
   font-weight: 600;
+  text-rendering: optimizelegibility;
   letter-spacing: -0.02em;
   color: #3d444a;
   line-height: 1.2em;
@@ -163,6 +164,7 @@ p {
   max-width: 780px;
   float: none;
   display: block;
+  text-rendering: optimizelegibility;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
@@ -221,13 +223,14 @@ nav ul li a:hover {
   font-weight: 700;
   font-size: 1.775rem;
   letter-spacing: -0.045em;
+  text-rendering: optimizelegibility;
   font-size: 2vw;
   font-weight: 600;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  transition: all 0.3s fade-in-up;
   line-height: 1.1em;
   padding: 30px 40px 100px 100px;
-
 }
 
 /* Box Hover Image Animation */
@@ -614,6 +617,7 @@ footer a:hover {
   font-family: 'Monoton', sans-serif;
   font-size: 5rem;
   font-weight: 700;
+  text-rendering: optimizelegibility;
   z-index: 50;
   top: 30%;
   text-align: center;
