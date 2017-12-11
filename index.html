@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed|Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="vendor/animate/animate.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 <!--     Props to kurtnoble.com for design and development inspiration
  --></head>
@@ -151,7 +152,7 @@
         <div id="about" class="wrapper">
           <div class="desc">
           <h1>Some Tag Call to Action Here</h1>
-          <div class="profile-foto"></div>
+          <div id="profile-foto" class="profile-foto animated"></div>
           <p>John Milner is a web developer and digital creative based in San Diego, California. He has award-winning experience working across global and regional campaigns for clients such as Nike, Nokia, Axe (Lynx), Bud Light, Quaker, and Ad Council. He is well-versed across all platforms and believes emotion and story are fundamental to creating fresh brand-driven content and interactions. His work bridges culture, design and technology from interactive, mobile and social to gaming, film and television -- with a focus on creating holistic, engaging and entertaining brand experiences.</p>
           </div>
       </div>
@@ -160,7 +161,7 @@
     <div id="contact"></div>
     <footer>
       <div id="pixelsurf">
-          <div class="surf">Pixel Surfing since 2016</div>
+          <div id="surf" class="surf">Pixel Surfing since 2017</div>
               <a href="https://twitter.com/johnnmilner"><i class="fa fa-twitter"></i></a>
               <a href="https://linkedin.com/johnmilneronline"><i class="fa fa-linkedin"></i></a>
               <a href="https://github.com/johnnycatsd"><i class="fa fa-github"></i></a>
@@ -168,39 +169,17 @@
       </div>
     </footer>
 
-
-    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
     <script type="text/javascript" src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     <script type="text/javascript" src="vendor/footer-reveal/footer-reveal.js"></script>
 
-    <script type="text/javascript" src="js/build.js"></script>
-    <!-- <script type="text/javascript">
-      var panorama;
-      function initialize() {
-        var isScroll = (window.outerWidth > 480) ? false : true;
-        panorama = new google.maps.StreetViewPanorama(
-            document.getElementById('street-view'),
-            {
-              position: {lat: 33.1928141, lng: -117.3867058},
-              pov: {heading: 165, pitch: 0},
-              zoom: 1,
-              // hiding overlay elements
-              mapTypeControl: false,
-              scaleControl: false,
-              streetViewControl: false,
-              rotateControl: false,
-              fullscreenControl: false,
-              disableDefaultUI: true,
-              // draggable: isScroll,
-              // scrollwheel: isScroll
-            });
-        console.log('LOADED!');
-      }
-    </script> -->
 
-    <!-- <script async defer
-         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwO77jHIXy8e2sdoQAlZ0OptEV89yBoE0&callback=initialize">
-    </script> -->
+    <script type="text/javascript" src="js/build.js"></script>
+ 
 </body>
 
 </html>

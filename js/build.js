@@ -15,40 +15,24 @@
         }
     });
 
-    // // Closes responsive menu when a scroll trigger link is clicked
-    // $('.js-scroll-trigger').click(function() {
-    //     $('.navbar-collapse').collapse('hide');
-    // });
-
-    // // Activate scrollspy to add active class to navbar items on scroll
-    // $('body').scrollspy({
-    //     target: '#mainNav',
-    //     offset: 54
-    // });
-    // // Collapse Navbar
-    // var navbarCollapse = function() {
-    //     if ($("#mainNav").offset().top > 400) {
-    //         $("#mainNav").addClass("navbar-shrink");
-    //     } else {
-    //         $("#mainNav").removeClass("navbar-shrink");
-    //     }
-    // };
-    // // Collapse now if page is not at top
-    // navbarCollapse();
-    // // Collapse the navbar when page is scrolled
-    // $(window).scroll(navbarCollapse);
-
+    //footer reveal
     $('footer').footerReveal();
 
-    // // Floating label headings for the contact form
-    // $(function() {
-    //     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-    //         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-    //     }).on("focus", ".floating-label-form-group", function() {
-    //         $(this).addClass("floating-label-form-group-with-focus");
-    //     }).on("blur", ".floating-label-form-group", function() {
-    //         $(this).removeClass("floating-label-form-group-with-focus");
-    //     });
-    // });
 
-})(jQuery); // End of use strict
+    //waypoints
+    $('#profile-foto').css('opacity', 0);
+ 
+    $('#profile-foto').waypoint(function(direction) {
+    if (direction === 'down') {
+      // reveal our content
+      $('#profile-foto').addClass('fade-in-up');
+      $('#profile-foto').removeClass('fadeOutDown');
+    } else if (direction === 'up') {
+      // hide our content
+      $('#profile-foto').addClass('fadeOutDown');
+      $('#profile-foto').removeClass('fade-in-up');
+    }
+ 
+  }, { offset: '70%' });
+
+})(jQuery);

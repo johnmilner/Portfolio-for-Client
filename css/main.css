@@ -705,34 +705,43 @@ footer a:hover {
   top: 30%;
   text-align: center; }
 
-/*a[href^="http://maps.google.com/maps"],
-a[href^="https://maps.google.com/maps"],
-a[href^="https://www.google.com/maps"] {
-    display: none !important;
-}
-.gmnoprint:not(.gm-bundled-control) {
-    display: none;
-}
-.gm-bundled-control .gmnoprint {
-    display: block;
-}
+.fade-in-up {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-    display:none;
-}
-.gmnoprint div {
-    background:none !important;
-}
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up; }
 
-#map-report a img { display:none; } 
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
 
-.gm-style-cc {
-  display: none !important;
-}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
 
-.gm-style a[href^="https://maps.google.com/maps"] {
-  display: none !important;
-}*/
+.resolved {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1; }
+
 /* site.scss governs design for 1221 and above
   responsive.scss governs design for:
   1000 to 1220
