@@ -214,6 +214,7 @@ nav ul li a:hover {
 
 .project {
   background-size: 100% 100%;
+  background-position: center center;
 }
 
 .inner-content {
@@ -485,27 +486,28 @@ nav ul li a:hover {
   background-image: url('../img/projects/marketing-page.png');
 }
 
+.foto {
+  background-image: url('../img/projects/profile-pic.gif');
+}
+
 /* About Section */
 
 section {
   background:seashell;
   color:white;
-  height: 60vh;
+  height: auto;
+  padding: 8% 5%;
   box-shadow: 0px 0px 20px rgba(0,0,0,.7);
 }
 
 section p {
-/*  font-family: 'Lato', sans-serif;
-*/
-    font-family: monospace;
+  font-family: monospace;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-/*  align-items: center;
-*/  padding: 12vh;
   text-align: center;
 }
 
@@ -522,13 +524,6 @@ section p {
     font-size: 1.125rem;
     padding-bottom: 1.25rem;
     line-height: 1.2em;
-}
-
-.foto {
-  background-image: url('../img/projects/profile-pic.gif');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
 }
 
 /* Footer Section */
