@@ -18,6 +18,9 @@
     //footer reveal
     $('footer').footerReveal();
 
+    //nav animation
+    //$('#main-headline').addClass('animated bounceInUp');
+
     //waypoints
     $('#profile-foto').css('opacity', 0);
  

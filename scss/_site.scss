@@ -200,7 +200,7 @@ nav ul {
   justify-content: flex-end;
   padding: 100px 40px 0 0;
   font-size: .75rem;
-  animation: 1s ease-out 0.5s 1 fade-in-up;
+  animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s 1 fade-in-up;
 }
 
 nav ul li {
@@ -498,8 +498,8 @@ nav ul li a:hover {
   background-image: url('../img/projects/yelp-camp.png');
 }
 
-.drumkit {
-  background-image: url('../img/projects/drumkit.png');
+.painter {
+  background-image: url('../img/projects/painter.png');
 }
 
 .todo {
@@ -510,8 +510,8 @@ nav ul li a:hover {
   background-image: url('../img/projects/marketing-page.png');
 }
 
-.foto {
-  background-image: url('../img/projects/slide-and-show.png');
+.color {
+  background-image: url('../img/projects/color-game.png');
 }
 
 /* About Section */
