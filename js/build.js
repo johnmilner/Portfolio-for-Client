@@ -18,11 +18,6 @@
     //footer reveal
     $('footer').footerReveal();
 
-
-    $('#main-headline').waypoint(function() {
-      $('#main-headline').addClass('fadeInUp');
-  });
-
     //waypoints
     $('#profile-foto').css('opacity', 0);
  
