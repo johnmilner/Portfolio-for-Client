@@ -266,9 +266,28 @@ a:hover, a:active, a:focus {
 li {
   list-style: none; }
 
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #3d444a;
+  line-height: 1.2em;
+  margin-bottom: 2.75rem; }
+
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem; }
+  width: auto;
+  max-width: 780px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  color: #666;
+  font-size: 1.125rem;
+  padding-bottom: 1.25rem; }
 
 article,
 aside,
@@ -586,7 +605,7 @@ nav ul li a:hover {
   background-image: url("../img/projects/marketing-page.png"); }
 
 .foto {
-  background-image: url("../img/projects/profile-pic.gif"); }
+  background-image: url("../img/projects/slide-and-show.png"); }
 
 /* About Section */
 section {
@@ -601,9 +620,24 @@ section p {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center; }
+
+.profile-foto {
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  height: 300px;
+  width: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../img/projects/profile-pic.gif");
+  margin-bottom: 2.75rem; }
 
 .desc {
   width: auto;
