@@ -333,15 +333,12 @@ nav ul li a:hover {
   color: white;
   font-weight: 700;
   font-size: 1.775rem;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 2vw;
   font-weight: 600;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  transition: all 0.3s fade-in-up;
   line-height: 1.1em;
-  padding: 30px 40px 100px 100px; }
+  padding: 30px 90px 100px 100px; }
 
 /* Box Hover Image Animation */
 .project {
@@ -761,8 +758,13 @@ footer a:hover {
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-weight: 700;
-    font-size: 1.50rem;
-    padding: 30px 50px 100px 56px; }
+    font-size: 1.775rem;
+    letter-spacing: -0.045em;
+    text-rendering: optimizelegibility;
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 1.1em;
+    padding: 30px 70px 100px 56px; }
   nav ul {
     display: flex;
     justify-content: flex-end;
@@ -776,7 +778,8 @@ footer a:hover {
     color: white;
     font-weight: 700;
     font-size: 1.50rem;
-    padding: 30px 50px 100px 56px; } }
+    padding: 30px 50px 100px 56px;
+    text-rendering: optimizelegibility; } }
 
 /* ----------- 668 -> 768 ----------- */
 @media only screen and (min-width: 668px) and (max-width: 768px) {
@@ -786,10 +789,9 @@ footer a:hover {
     font-size: 1.775rem;
     letter-spacing: -0.045em;
     font-weight: 600;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
     line-height: 1.1em;
-    padding: 10px 40px 0px 15px; } }
+    padding: 10px 40px 0px 15px;
+    text-rendering: optimizelegibility; } }
 
 /* ----------- 320 -> 667 ----------- */
 @media only screen and (min-width: 320px) and (max-width: 667px) {

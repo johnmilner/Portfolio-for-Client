@@ -12,8 +12,13 @@
   font-family: 'Open Sans', sans-serif;  
   color: white;
   font-weight: 700;
-  font-size: 1.50rem;
-  padding: 30px 50px 100px 56px;
+  font-size: 1.775rem;
+  letter-spacing: -0.045em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  font-weight: 600;
+  line-height: 1.1em;
+  padding: 30px 70px 100px 56px;
 
 }
   nav ul {
@@ -36,6 +41,7 @@
   font-weight: 700;
   font-size: 1.50rem;
   padding: 30px 50px 100px 56px;
+  text-rendering: optimizelegibility;
 
 }
 
@@ -53,10 +59,9 @@
   font-size: 1.775rem;
   letter-spacing: -0.045em;
   font-weight: 600;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
   line-height: 1.1em;
   padding: 10px 40px 0px 15px;
+  text-rendering: optimizelegibility;
 
 }
 

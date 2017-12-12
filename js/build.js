@@ -22,7 +22,7 @@
     //$('#main-headline').addClass('animated bounceInUp');
 
     //waypoints
-    $('#profile-foto').css('opacity', 0);
+    //$('#profile-foto').css('opacity', 0);
  
     $('#profile-foto').waypoint(function(direction) {
     if (direction === 'down') {
@@ -35,7 +35,7 @@
       $('#profile-foto').removeClass('fade-in-up');
     }
  
-  }, { offset: '70%' });
+  }, { offset: '75%' });
 
 
 })(jQuery);
