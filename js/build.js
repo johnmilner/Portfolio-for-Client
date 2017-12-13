@@ -35,7 +35,7 @@
       $('#profile-foto').removeClass('fade-in-up');
     }
  
-  }, { offset: '75%' });
+  }, { offset: '35%' });
 
 
 })(jQuery);
