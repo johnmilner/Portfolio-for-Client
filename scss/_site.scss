@@ -102,7 +102,8 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 main {
   display: flex;
-  flex: 1;
+  /*flex: 1;*/
+  flex: 1 0 33.33333%; /*fix for IE11*/
   flex-wrap: wrap;
   justify-content: flex-start;
   border: none;
@@ -594,7 +595,8 @@ footer a:hover {
 */
   *zoom: 1;
   width: auto;
-  max-width: 1699px;
+  /*max-width: 1699px;*/
+  max-width: 100%;
   float: none;
   display: block;
   margin-right: auto;
