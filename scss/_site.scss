@@ -149,9 +149,9 @@ li {
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
   font-size: 2.875rem;
-  font-weight: 600;
+  font-weight: 300;
   text-rendering: optimizelegibility;
   letter-spacing: -0.02em;
   color: #3d444a;
@@ -160,7 +160,7 @@ h1 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
   width: auto;
   max-width: 780px;
   float: none;
@@ -220,18 +220,19 @@ nav ul li a:hover {
 }
 
 .main-headline {
-  font-family: 'Open Sans', sans-serif;  
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
   color: white;
-  font-weight: 700;
-  font-size: 1.775rem;
+  font-weight: 300;
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 2vw;
-  font-weight: 600;
-  line-height: 1.1em;
+  line-height: 1.3em;
   padding: 30px 90px 100px 100px;
 }
 
+.em {
+  font-size: .75em;
+}
 /* Box Hover Image Animation */
 
 .project {
@@ -518,7 +519,7 @@ section {
   background:seashell;
   color:white;
   height: auto;
-  padding: 8% 5%;
+  padding: 3% 5%;
   box-shadow: 0px 0px 20px rgba(0,0,0,.7);
 }
 

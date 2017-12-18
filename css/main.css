@@ -269,9 +269,9 @@ li {
   list-style: none; }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   font-size: 2.875rem;
-  font-weight: 600;
+  font-weight: 300;
   text-rendering: optimizelegibility;
   letter-spacing: -0.02em;
   color: #3d444a;
@@ -279,7 +279,7 @@ h1 {
   margin-bottom: 2.75rem; }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   width: auto;
   max-width: 780px;
   float: none;
@@ -331,16 +331,17 @@ nav ul li a:hover {
   transition: all 0.5s ease; }
 
 .main-headline {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   color: white;
-  font-weight: 700;
-  font-size: 1.775rem;
+  font-weight: 300;
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 2vw;
-  font-weight: 600;
-  line-height: 1.1em;
+  line-height: 1.3em;
   padding: 30px 90px 100px 100px; }
+
+.em {
+  font-size: .75em; }
 
 /* Box Hover Image Animation */
 .project {
@@ -616,7 +617,7 @@ section {
   background: seashell;
   color: white;
   height: auto;
-  padding: 8% 5%;
+  padding: 3% 5%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); }
 
 section p {
@@ -757,48 +758,58 @@ footer a:hover {
   and 320 to 667
 */
 /* ----------- 1000 -> 1220 ----------- */
-@media (min-width: 1000px) and (max-width: 1220px) {
-  .main-headline {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-weight: 700;
-    font-size: 1.775rem;
-    letter-spacing: -0.045em;
-    text-rendering: optimizelegibility;
-    font-size: 2vw;
-    font-weight: 600;
-    line-height: 1.1em;
-    padding: 30px 70px 100px 56px; }
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-    padding: 110px 40px 0 0;
-    font-size: .75rem; } }
+.main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -0.045em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  line-height: 1.5em;
+  padding: 0px 50px 100px 56px; }
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 110px 40px 0 0;
+  font-size: .75rem; }
 
 /* ----------- 768 -> 999 ----------- */
 @media (min-width: 768px) and (max-width: 999px) {
   .main-headline {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
     color: white;
-    font-weight: 700;
-    font-size: 1.50rem;
-    padding: 30px 50px 100px 56px;
-    text-rendering: optimizelegibility; } }
+    font-weight: 300;
+    letter-spacing: -0.045em;
+    text-rendering: optimizelegibility;
+    font-size: 3vw;
+    line-height: 1.5em;
+    padding: 30px 70px 100px 56px; } }
 
 /* ----------- 668 -> 768 ----------- */
 @media only screen and (min-width: 668px) and (max-width: 768px) {
   .main-headline {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
     color: white;
-    font-size: 1.775rem;
+    font-weight: 300;
     letter-spacing: -0.045em;
-    font-weight: 600;
+    text-rendering: optimizelegibility;
+    font-size: 4vw;
     line-height: 1.1em;
-    padding: 10px 40px 0px 15px;
-    text-rendering: optimizelegibility; } }
+    padding: 30px 70px 100px 56px; } }
 
 /* ----------- 320 -> 667 ----------- */
 @media only screen and (min-width: 320px) and (max-width: 667px) {
+  .main-headline {
+    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1.775rem;
+    letter-spacing: -0.045em;
+    text-rendering: optimizelegibility;
+    font-size: 2vw;
+    line-height: 1.1em;
+    padding: 30px 70px 100px 56px; }
   .container {
     display: flex;
     flex-direction: column; }
