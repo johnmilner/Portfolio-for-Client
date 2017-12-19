@@ -269,9 +269,12 @@ li {
   list-style: none; }
 
 h1 {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  /*  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif; 
+*/
+  font-family: 'Playfair Display', serif;
   font-size: 2.875rem;
   font-weight: 300;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   text-rendering: optimizelegibility;
   letter-spacing: -0.02em;
   color: #3d444a;
@@ -614,7 +617,7 @@ nav ul li a:hover {
 
 /* About Section */
 section {
-  background: seashell;
+  background: #fafafa;
   color: white;
   height: auto;
   padding: 3% 5%;
@@ -643,7 +646,8 @@ section p {
   background-size: cover;
   background-image: url("../img/projects/profile-pic.gif");
   background-repeat: no-repeat;
-  margin-bottom: 2.75rem; }
+  margin-bottom: 2.75rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08); }
 
 .desc {
   width: auto;
@@ -667,13 +671,13 @@ footer {
   height: 100vh; }
 
 footer a {
-  color: turquoise;
+  color: cadetblue;
   font-size: 3rem;
   padding: 20px;
   transition: all .5s ease; }
 
 footer a:hover {
-  color: turquoise;
+  color: cadetblue;
   opacity: 0.3; }
 
 #pixelsurf {
@@ -704,7 +708,7 @@ footer a:hover {
 .surf {
   padding-top: 15vh;
   background: transparent;
-  color: mediumturquoise;
+  color: cadetblue;
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
   font-weight: 900;
