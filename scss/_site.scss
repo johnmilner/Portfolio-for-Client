@@ -199,7 +199,7 @@ summary {
 }
 
 .smooth-scroll {
-
+  animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up;
 }
 
 nav ul {
@@ -207,8 +207,6 @@ nav ul {
   justify-content: flex-end;
   padding: 100px 40px 0 0;
   font-size: .75rem;
-  opacity: 0;
-  animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s 1 fade-in-up;
 }
 
 nav ul li {
@@ -659,24 +657,8 @@ footer a:hover {
             transform: translateY(0);
   }
 }
-@keyframes fade-in-up {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 
-.resolved {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-}
+
 
 
 
