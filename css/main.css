@@ -675,14 +675,17 @@ footer {
   height: 100vh; }
 
 footer a {
-  color: cadetblue;
+  color: #00a699;
   font-size: 3rem;
   padding: 20px;
   transition: all .5s ease; }
 
 footer a:hover {
-  color: cadetblue;
+  color: #00a699;
   opacity: 0.3; }
+
+footer a.pin:hover {
+  opacity: 1; }
 
 #pixelsurf {
   /*position: fixed; 
@@ -712,7 +715,7 @@ footer a:hover {
 .surf {
   padding-top: 15vh;
   background: transparent;
-  color: cadetblue;
+  color: #00a699;
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
   font-weight: 900;
@@ -720,6 +723,21 @@ footer a:hover {
   z-index: 50;
   top: 30%;
   text-align: center; }
+
+footer a.pin {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+footer a.pin {
+  width: 30px;
+  height: 56px;
+  display: block;
+  position: absolute;
+  top: calc(35% - 21px);
+  left: calc(67% - 11px);
+  background-image: url("../img/projects/map-pin.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
 
 .fade-in-up {
   -webkit-animation-duration: 0.5s;
