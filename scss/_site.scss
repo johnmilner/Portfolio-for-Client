@@ -73,6 +73,38 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
     }
 }
 
+.fade-in-up {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+          animation-name: fade-in-up;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+footer a.pin {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
 /* Container Grid Setup Here */
 .container {
   display:flex;
@@ -176,23 +208,6 @@ p {
   font-size: 1.125rem;
   padding-bottom: 1.25rem;
 }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-header,
-menu,
-nav,
-summary {
-  display: block;
-}
-
-/*footer {
-  display:flex;
-
-}*/
 
 .box1 {
   display: flex;
@@ -637,10 +652,7 @@ footer a.pin:hover {
   text-align: center;
 }
 
-footer a.pin {
-  -webkit-animation: bounce 2s infinite;
-          animation: bounce 2s infinite;
-}
+
 
 footer a.pin {
   width: 30px;
@@ -654,32 +666,7 @@ footer a.pin {
   background-repeat: no-repeat;
 }
 
-.fade-in-up {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 
-.fade-in-up {
-  -webkit-animation-name: fade-in-up;
-          animation-name: fade-in-up;
-}
-
-@-webkit-keyframes fade-in-up {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 
 
 
