@@ -15,22 +15,15 @@
   font-weight: 300;
   letter-spacing: -0.045em;
   text-rendering: optimizelegibility;
-<<<<<<< HEAD
-  font-size: 2vw;
-  font-weight: 600;
-  line-height: 1.1em;
-  padding: 30px 70px 0px 56px;
-=======
-  font-size: 3vw;
+  font-size: 2.8vw;
   line-height: 1.5em;
-  padding: 0px 44px 100px 56px;
->>>>>>> master
-
+  padding: 0px 44px 0px 56px;
 }
+
   nav ul {
   display: flex;
   justify-content: flex-end;
-  padding: 110px 40px 0 0;
+  padding: 30px 11px 0 0;
   font-size: .75rem;
 }
 
@@ -41,24 +34,15 @@
 @media(min-width:768px) and (max-width: 999px){
 
  .main-headline {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
-  color: white;
-<<<<<<< HEAD
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 30px 50px 0px 56px;
-=======
-  font-weight: 300;
-  letter-spacing: -0.045em;
->>>>>>> master
-  text-rendering: optimizelegibility;
-  font-size: 3vw;
-  line-height: 1.5em;
-  padding: 30px 70px 100px 56px;
-
+    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: -.045em;
+    text-rendering: optimizelegibility;
+    font-size: 2.5vw;
+    line-height: 1.5em;
+    padding: 0px 30px 0px 46px;
 }
-
-<<<<<<< HEAD
   nav ul {
     display: flex;
     justify-content: flex-end;
@@ -66,9 +50,6 @@
     font-size: .75rem;
 }
 
-
-=======
->>>>>>> master
 }
 
 
@@ -77,19 +58,14 @@
 @media only screen and (min-width:601px) and (max-width: 768px){
 
  .main-headline {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
-  color: white;
-<<<<<<< HEAD
-  font-size: 1rem;
-=======
-  font-weight: 300;
->>>>>>> master
-  letter-spacing: -0.045em;
-  text-rendering: optimizelegibility;
-  font-size: 4vw;
-  line-height: 1.1em;
-  padding: 30px 70px 100px 56px;
-
+    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: -.045em;
+    text-rendering: optimizelegibility;
+    font-size: 2.5vw;
+    line-height: 1.5em;
+    padding: 0px 30px 0px 46px;
 }
 
   nav ul {
@@ -129,8 +105,6 @@
   color:white;
   margin: 0;
   padding: 0;
-/*  flex: 1 1 33.33333%;
-  height: 233px;*/
   height: 270px;
   flex: 1 0 33.33333%;
 }

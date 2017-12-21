@@ -241,8 +241,6 @@ footer a.pin {
   color: white;
   margin: 0;
   padding: 0;
-  /*  flex: 1 1 33.33333%;
-  height: 233px;*/
   flex: 0 0 33.33333%; }
 
 .box::before {
@@ -336,15 +334,9 @@ p {
   font-size: 1.125rem;
   padding-bottom: 1.25rem; }
 
-<<<<<<< HEAD
-=======
-.box1 {
-  display: flex; }
-
 .smooth-scroll {
   animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }
 
->>>>>>> master
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -370,14 +362,9 @@ nav ul li a:hover {
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 2vw;
-<<<<<<< HEAD
-  font-weight: 600;
   line-height: 1.1em;
-  padding: 30px 90px 0px 100px; }
-=======
-  line-height: 1.3em;
-  padding: 30px 90px 100px 100px; }
->>>>>>> master
+  padding: 30px 90px 0px 100px;
+  line-height: 1.3em; }
 
 .em {
   font-size: .75em; }
@@ -652,7 +639,6 @@ nav ul li a:hover {
 
 /* About Section */
 section {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -665,14 +651,12 @@ section {
   float: none;
   display: block;
   margin-right: auto;
-  margin-left: auto; }
-=======
+  margin-left: auto;
   background: #fafafa;
   color: white;
   height: auto;
   padding: 3% 5%;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08); }
->>>>>>> master
 
 section p {
   font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
@@ -682,7 +666,7 @@ section p {
 .wrapper {
   text-align: center;
   height: 100%;
-  padding: 8% 5%;
+  padding: 1% 5%;
   /*  box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 */ }
 
@@ -787,7 +771,6 @@ footer a.pin {
   background-size: 100% auto;
   background-repeat: no-repeat; }
 
-<<<<<<< HEAD
 .visible-grid-item:nth-child(2) div {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s; }
@@ -843,10 +826,7 @@ footer a.pin {
 .empty .inner-content {
   display: none; }
 
-/* site.scss governs design for 1221 and above
-=======
 /* site.scss governs design for 1268 and above
->>>>>>> master
   responsive.scss governs design for:
   1000 to 1268
   and 767 to 999 
@@ -861,63 +841,43 @@ footer a.pin {
     font-weight: 300;
     letter-spacing: -0.045em;
     text-rendering: optimizelegibility;
-<<<<<<< HEAD
-    font-size: 2vw;
-    font-weight: 600;
-    line-height: 1.1em;
-    padding: 30px 70px 0px 56px; }
-=======
-    font-size: 3vw;
+    font-size: 2.8vw;
     line-height: 1.5em;
-    padding: 0px 44px 100px 56px; }
->>>>>>> master
+    padding: 0px 44px 0px 56px; }
   nav ul {
     display: flex;
     justify-content: flex-end;
-    padding: 110px 40px 0 0;
+    padding: 30px 11px 0 0;
     font-size: .75rem; } }
 
 /* ----------- 768 -> 999 ----------- */
 @media (min-width: 768px) and (max-width: 999px) {
   .main-headline {
     font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-    color: white;
-<<<<<<< HEAD
-    font-weight: 700;
-    font-size: 1rem;
-    padding: 30px 50px 0px 56px;
-    text-rendering: optimizelegibility; }
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: -.045em;
+    text-rendering: optimizelegibility;
+    font-size: 2.5vw;
+    line-height: 1.5em;
+    padding: 0px 30px 0px 46px; }
   nav ul {
     display: flex;
     justify-content: flex-end;
     padding: 30px 11px 0 0;
     font-size: .75rem; } }
-=======
-    font-weight: 300;
-    letter-spacing: -0.045em;
-    text-rendering: optimizelegibility;
-    font-size: 3vw;
-    line-height: 1.5em;
-    padding: 30px 70px 100px 56px; } }
->>>>>>> master
 
 /* ----------- 601 -> 768 ----------- */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .main-headline {
     font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-    color: white;
-<<<<<<< HEAD
-    font-size: 1rem;
-=======
+    color: #fff;
     font-weight: 300;
->>>>>>> master
-    letter-spacing: -0.045em;
+    letter-spacing: -.045em;
     text-rendering: optimizelegibility;
-    font-size: 4vw;
-    line-height: 1.1em;
-<<<<<<< HEAD
-    padding: 10px 40px 0px 15px;
-    text-rendering: optimizelegibility; }
+    font-size: 2.5vw;
+    line-height: 1.5em;
+    padding: 0px 30px 0px 46px; }
   nav ul {
     display: flex;
     justify-content: flex-end;
@@ -926,11 +886,6 @@ footer a.pin {
 
 /* ----------- 320 -> 600 ----------- */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-=======
-    padding: 30px 70px 100px 56px; } }
-
-/* ----------- 320 -> 667 ----------- */
-@media only screen and (min-width: 320px) and (max-width: 667px) {
   .main-headline {
     font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
     color: white;
@@ -941,7 +896,6 @@ footer a.pin {
     font-size: 2vw;
     line-height: 1.1em;
     padding: 30px 70px 100px 56px; }
->>>>>>> master
   .container {
     display: flex;
     flex-direction: column; }
@@ -950,8 +904,6 @@ footer a.pin {
     color: white;
     margin: 0;
     padding: 0;
-    /*  flex: 1 1 33.33333%;
-  height: 233px;*/
     height: 270px;
     flex: 1 0 33.33333%; }
   .box::before {
