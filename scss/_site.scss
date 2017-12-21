@@ -25,6 +25,9 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box14 { background:#34495e;}
 .box15 { background:#f1c40f;}
 
+
+/* Animations */
+
 @-webkit-keyframes dboxRainbow {
     0% {
         background-position: 0% 50%
@@ -108,6 +111,7 @@ footer a.pin {
 
 
 /* Container Grid Setup Here */
+
 .container {
   display:flex;
   height:100%;
@@ -198,8 +202,7 @@ li {
 }
 
 h1 {
-/*  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif; 
-*/  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 2.875rem;
   font-weight: 300;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
@@ -258,7 +261,6 @@ nav ul li a:hover {
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 2vw;
-  line-height: 1.1em;
   padding: 30px 90px 0px 100px;
   line-height: 1.3em;
 }
@@ -266,6 +268,8 @@ nav ul li a:hover {
 .em {
   font-size: .75em;
 }
+
+
 /* Box Hover Image Animation */
 
 .project {
@@ -545,6 +549,8 @@ nav ul li a:hover {
   background-image: url('../img/projects/color-game.png');
 }
 
+
+
 /* About Section */
 
 section {
@@ -552,8 +558,6 @@ section {
   flex-direction: column;
   flex-basis: 100%;
   position: relative;
-  background:seashell;
-  color:white;
   text-align: center;
   width: auto;
   max-width: 1699px;
@@ -563,8 +567,8 @@ section {
   margin-left: auto;
   background: #fafafa;
   color:white;
-  height: auto;
-  padding: 3% 5%;
+  height: 100%;
+  padding: 1% 5%;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
 }
 
@@ -578,8 +582,7 @@ section p {
   text-align: center;
   height: 100%;
   padding: 1% 5%;
-/*  box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-*/}
+}
 
 .profile-foto {
   display: block;
@@ -598,8 +601,8 @@ section p {
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
 }
 
-#about {display: block; position: relative; top: 60px;}
-
+/*#about {display: block; position: relative; top: 60px;}
+*/
 
 .desc {
     width: auto;
@@ -677,23 +680,17 @@ footer a.pin:hover {
   text-align: center;
 }
 
-
-
 footer a.pin {
   width: 30px;
   height: 56px;
   display: block;
-  position: absolute;
+  position: fixed;
   top: calc(35% - 21px);
   left: calc(67% - 11px);
   background-image: url("../img/projects/map-pin.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-
-
-
-
 
 .visible-grid-item:nth-child(2) div {
   -webkit-animation-delay: 0.4s;
