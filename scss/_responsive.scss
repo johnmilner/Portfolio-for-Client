@@ -1,24 +1,30 @@
-/* site.scss governs design for 1221 and above
+/* site.scss governs design for 1268 and above
   responsive.scss governs design for:
-  1000 to 1220
+  1000 to 1268
   and 767 to 999 
   and 668 to 778 
   and 320 to 667
 */
 
-/* ----------- 1000 -> 1220 ----------- */
-@media(min-width: 1000px) and (max-width: 1220px)  {
-  .main-headline {
-  font-family: 'Open Sans', sans-serif;  
+/* ----------- 1000 -> 1268 ----------- */
+@media(min-width:1000px) and (max-width: 1268px){
+
+ .main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
   color: white;
-  font-weight: 700;
-  font-size: 1.775rem;
+  font-weight: 300;
   letter-spacing: -0.045em;
   text-rendering: optimizelegibility;
+<<<<<<< HEAD
   font-size: 2vw;
   font-weight: 600;
   line-height: 1.1em;
   padding: 30px 70px 0px 56px;
+=======
+  font-size: 3vw;
+  line-height: 1.5em;
+  padding: 0px 44px 100px 56px;
+>>>>>>> master
 
 }
   nav ul {
@@ -28,23 +34,31 @@
   font-size: .75rem;
 }
 
-
 }
 
 /* ----------- 768 -> 999 ----------- */
 
 @media(min-width:768px) and (max-width: 999px){
 
-  .main-headline {
-  font-family: 'Open Sans', sans-serif;  
+ .main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
   color: white;
+<<<<<<< HEAD
   font-weight: 700;
   font-size: 1rem;
   padding: 30px 50px 0px 56px;
+=======
+  font-weight: 300;
+  letter-spacing: -0.045em;
+>>>>>>> master
   text-rendering: optimizelegibility;
+  font-size: 3vw;
+  line-height: 1.5em;
+  padding: 30px 70px 100px 56px;
 
 }
 
+<<<<<<< HEAD
   nav ul {
     display: flex;
     justify-content: flex-end;
@@ -53,6 +67,8 @@
 }
 
 
+=======
+>>>>>>> master
 }
 
 
@@ -60,15 +76,19 @@
 
 @media only screen and (min-width:601px) and (max-width: 768px){
 
-  .main-headline {
-  font-family: 'Open Sans', sans-serif;  
+ .main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
   color: white;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-weight: 300;
+>>>>>>> master
   letter-spacing: -0.045em;
-  font-weight: 600;
-  line-height: 1.1em;
-  padding: 10px 40px 0px 15px;
   text-rendering: optimizelegibility;
+  font-size: 4vw;
+  line-height: 1.1em;
+  padding: 30px 70px 100px 56px;
 
 }
 
@@ -85,6 +105,19 @@
 /* ----------- 320 -> 600 ----------- */
 
 @media only screen and (min-width:320px) and (max-width: 600px){
+
+  .main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
+  color: white;
+  font-weight: 300;
+  font-size: 1.775rem;
+  letter-spacing: -0.045em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  line-height: 1.1em;
+  padding: 30px 70px 100px 56px;
+
+}
 
   .container {
     display: flex;
