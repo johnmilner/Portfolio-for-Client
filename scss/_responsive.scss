@@ -50,6 +50,18 @@ nav ul {
     font-size: .75rem;
 }
 
+footer a.pin {
+    width: 30px;
+    height: 56px;
+    display: block;
+    top: calc(31% - 21px);
+    left: calc(75% - 11px);
+    background-image: url("../img/projects/map-pin.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
 }
 
 
@@ -74,6 +86,18 @@ nav ul {
     padding: 30px 11px 0 0;
     font-size: .75rem;
 }
+
+    footer a.pin {
+      width: 30px;
+      height: 56px;
+      display: block;
+      top: calc(30% - 21px);
+      left: calc(78% - 11px);
+      background-image: url("../img/projects/map-pin.png");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
 
 
 }
@@ -144,6 +168,18 @@ nav ul {
   .surf {
   font-size: 3rem;
 }
+
+footer a.pin {
+    width: 30px;
+    height: 56px;
+    display: block;
+    top: calc(31% - 21px);
+    left: calc(88% - 11px);
+    background-image: url("../img/projects/map-pin.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
 
 #about {display: block; position: relative; top: 60px;}
 

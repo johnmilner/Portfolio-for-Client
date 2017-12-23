@@ -699,7 +699,8 @@ footer {
   padding: 0;
   text-align: center;
   margin: 0;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 footer a {
   color: #00a699;
@@ -714,17 +715,9 @@ footer a:hover {
 footer a.pin:hover {
   opacity: 1; }
 
-#pixelsurf {
-  /*position: fixed; 
-  top: 0; 
-  left: 0; 
-   Preserve aspect ratio 
-  min-width: 100%;
-  min-height: 100%;
-*/
+.pixelsurf {
   *zoom: 1;
   width: auto;
-  /*max-width: 1699px;*/
   max-width: 100%;
   float: none;
   display: block;
@@ -739,6 +732,14 @@ footer a.pin:hover {
   background-position: top center;
   position: relative; }
 
+footer .pixelsurf:before,
+footer .pixelsurf:after {
+  content: '';
+  display: table; }
+
+footer .pixelsurf:after {
+  clear: both; }
+
 .surf {
   padding-top: 15vh;
   background: transparent;
@@ -748,19 +749,19 @@ footer a.pin:hover {
   font-weight: 900;
   text-rendering: optimizelegibility;
   z-index: 50;
-  top: 30%;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 footer a.pin {
   width: 30px;
   height: 56px;
   display: block;
-  position: fixed;
   top: calc(35% - 21px);
   left: calc(67% - 11px);
   background-image: url("../img/projects/map-pin.png");
   background-size: 100% auto;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: absolute; }
 
 .visible-grid-item:nth-child(2) div {
   -webkit-animation-delay: 0.4s;
@@ -856,7 +857,17 @@ footer a.pin {
     display: flex;
     justify-content: flex-end;
     padding: 30px 11px 0 0;
-    font-size: .75rem; } }
+    font-size: .75rem; }
+  footer a.pin {
+    width: 30px;
+    height: 56px;
+    display: block;
+    top: calc(31% - 21px);
+    left: calc(75% - 11px);
+    background-image: url("../img/projects/map-pin.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute; } }
 
 /* ----------- 601 -> 768 ----------- */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -873,7 +884,17 @@ footer a.pin {
     display: flex;
     justify-content: flex-end;
     padding: 30px 11px 0 0;
-    font-size: .75rem; } }
+    font-size: .75rem; }
+  footer a.pin {
+    width: 30px;
+    height: 56px;
+    display: block;
+    top: calc(30% - 21px);
+    left: calc(78% - 11px);
+    background-image: url("../img/projects/map-pin.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute; } }
 
 /* ----------- 320 -> 600 ----------- */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -923,6 +944,16 @@ footer a.pin {
     border: none; }
   .surf {
     font-size: 3rem; }
+  footer a.pin {
+    width: 30px;
+    height: 56px;
+    display: block;
+    top: calc(31% - 21px);
+    left: calc(88% - 11px);
+    background-image: url("../img/projects/map-pin.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute; }
   #about {
     display: block;
     position: relative;
