@@ -208,8 +208,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .fade-in-up {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
