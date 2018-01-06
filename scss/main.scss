@@ -1,4 +1,9 @@
-@import "site.scss";
-@import "responsive.scss";
-/*@import "mobile.scss";
-*/
+@import "base/animations";
+@import "base/typography";
+@import "base/base";
+
+@import "components/_project-box.scss";
+
+@import "layout/_grid.scss";
+
+
