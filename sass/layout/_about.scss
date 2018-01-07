@@ -22,17 +22,15 @@
   }
 
   .profile-foto {
-    float: left;
     position: absolute;
-    top: 63%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -15rem; /* Half the height */
+    margin-left: -9rem; /* Half the width */
     display: block;
     margin-right: auto;
-    margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    float: left;
     height: 300px;
     width: 300px;
     border: 10px solid white;

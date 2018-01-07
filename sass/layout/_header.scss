@@ -19,17 +19,7 @@
     animation: dboxRainbow 30s ease infinite;
     -webkit-font-smoothing: subpixel-antialiased
 }
-  
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-  }
-  
+    
   .smooth-scroll {
     animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up;
   }
