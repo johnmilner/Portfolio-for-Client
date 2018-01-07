@@ -1,3 +1,21 @@
+/*
+
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800px] Where are normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Components
+
+1em = 16px
+*/
 /* Animations */
 @-webkit-keyframes dboxRainbow {
   0% {
@@ -525,17 +543,33 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   background-image: url("../img/projects/color-game.png"); }
 
 /* Container Grid Setup Here */
-.container {
-  display: flex;
-  height: 100%;
-  flex-flow: row wrap; }
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: 33.333333%; }
+  .row .col-2-of-3 {
+    width: 66.6666667%; }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .box {
   position: relative;
   color: white;
   margin: 0;
-  padding: 0;
-  flex: 0 0 33.33333%; }
+  padding: 0; }
 
 .box::before {
   content: "";
@@ -552,8 +586,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clear: both; }
 
 .box1 {
-  display: flex;
-  flex: 0 0 66.66666%;
+  height: 33.575rem;
   background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
   background-size: 1200% 1200%;
   -webkit-animation: dboxRainbow 30s ease infinite;
@@ -561,26 +594,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -o-animation: dboxRainbow 30s ease infinite;
   animation: dboxRainbow 30s ease infinite;
   -webkit-font-smoothing: subpixel-antialiased; }
-
-main {
-  display: flex;
-  flex: 1 0 33.33333%;
-  /*fix for IE11*/
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  border: none; }
-
-aside {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 33.33333%;
-  border: none; }
-
-.box2 {
-  flex: 0 0 33.3333%; }
-
-.box3 {
-  flex: 0 0 33.3333%; }
 
 a {
   text-decoration: none;
