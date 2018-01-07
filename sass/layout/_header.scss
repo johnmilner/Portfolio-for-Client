@@ -1,0 +1,67 @@
+.main-headline {
+    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+    color: white;
+    font-weight: 300;
+    letter-spacing: -0.035em;
+    text-rendering: optimizelegibility;
+    font-size: 2vw;
+    padding: 30px 90px 0px 100px;
+    line-height: 1.3em; 
+}
+
+.box1 {
+    height: 33.575rem;
+    background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
+    background-size: 1200% 1200%;
+    -webkit-animation: dboxRainbow 30s ease infinite;
+    -moz-animation: dboxRainbow 30s ease infinite;
+    -o-animation: dboxRainbow 30s ease infinite;
+    animation: dboxRainbow 30s ease infinite;
+    -webkit-font-smoothing: subpixel-antialiased
+}
+  
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+  }
+  
+  .smooth-scroll {
+    animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px 75px 0 0;
+    font-size: .75rem;
+  }
+  
+  nav ul li {
+    padding: 0 20px 0 0;
+  }
+  
+  nav ul li a {
+    padding: 10px 10px;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255,255,255,.3);
+    transition: all 0.5s ease;
+  }
+
+  .hero-btn {
+    transition: color 0.5s ease;
+  }
+  
+  .hero-btn:hover {
+    color: rgba(0,0,0,0.5);
+    transition: color 0.5s ease;
+    background: none;
+  }

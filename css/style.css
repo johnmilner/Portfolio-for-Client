@@ -228,6 +228,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  outline: 0; }
+
+a:hover, a:active, a:focus {
+  outline: 0; }
+
 /* Box Hover Image Animation */
 .project {
   background-size: 100% 100%;
@@ -585,131 +593,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: table;
   clear: both; }
 
-.box1 {
-  height: 33.575rem;
-  background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
-  background-size: 1200% 1200%;
-  -webkit-animation: dboxRainbow 30s ease infinite;
-  -moz-animation: dboxRainbow 30s ease infinite;
-  -o-animation: dboxRainbow 30s ease infinite;
-  animation: dboxRainbow 30s ease infinite;
-  -webkit-font-smoothing: subpixel-antialiased; }
-
-a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-  outline: 0; }
-
-a:hover, a:active, a:focus {
-  outline: 0; }
-
-.hero-btn {
-  transition: color 0.5s ease; }
-
-.hero-btn:hover {
-  color: rgba(0, 0, 0, 0.5);
-  transition: color 0.5s ease;
-  background: none; }
-
-li {
-  list-style: none; }
-
-.smooth-scroll {
-  animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }
-
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  padding: 100px 75px 0 0;
-  font-size: .75rem; }
-
-nav ul li {
-  padding: 0 20px 0 0; }
-
-nav ul li a {
-  padding: 10px 10px;
-  color: white;
-  transition: all 0.5s ease; }
-
-nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s ease; }
-
-.main-headline {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  color: white;
-  font-weight: 300;
-  letter-spacing: -0.035em;
-  text-rendering: optimizelegibility;
-  font-size: 2vw;
-  padding: 30px 90px 0px 100px;
-  line-height: 1.3em; }
-
-.em {
-  font-size: .75em; }
-
-/* About Section */
-.about {
-  padding: 5rem 5rem; }
-
-section {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: auto;
-  height: 40rem;
-  max-width: 1699px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  background: #fafafa;
-  color: white;
-  height: 100%;
-  padding: 1% 5%;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08); }
-
-section p {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  font-size: 1rem;
-  line-height: 1.7rem; }
-
-.wrapper {
-  text-align: center;
-  height: 100%;
-  padding: 1% 5%; }
-
-.profile-foto {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  float: left;
-  height: 300px;
-  width: 300px;
-  border: 10px solid white;
-  border-radius: 50%;
-  background-size: cover;
-  background-image: url("../img/projects/profile-pic.gif");
-  background-repeat: no-repeat;
-  margin-bottom: 2.75rem;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08); }
-
-/*#about {display: block; position: relative; top: 60px;}
-  */
-.desc {
-  width: auto;
-  max-width: 780px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  color: #666;
-  font-size: 1.125rem;
-  padding-bottom: 1.25rem;
-  line-height: 1.2em; }
-
 .visible-grid-item:nth-child(2) div {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s; }
@@ -762,9 +645,106 @@ section p {
   -webkit-animation-delay: 2.8s;
   animation-delay: 2.8s; }
 
-.empty .inner-content {
-  display: none; }
+.main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  padding: 30px 90px 0px 100px;
+  line-height: 1.3em; }
 
+.box1 {
+  height: 33.575rem;
+  background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
+  background-size: 1200% 1200%;
+  -webkit-animation: dboxRainbow 30s ease infinite;
+  -moz-animation: dboxRainbow 30s ease infinite;
+  -o-animation: dboxRainbow 30s ease infinite;
+  animation: dboxRainbow 30s ease infinite;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.smooth-scroll {
+  animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 100px 75px 0 0;
+  font-size: .75rem; }
+
+nav ul li {
+  padding: 0 20px 0 0; }
+
+nav ul li a {
+  padding: 10px 10px;
+  color: white;
+  transition: all 0.5s ease; }
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease; }
+
+.hero-btn {
+  transition: color 0.5s ease; }
+
+.hero-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+  transition: color 0.5s ease;
+  background: none; }
+
+/* About Section */
+.about {
+  position: relative;
+  text-align: center;
+  padding: 3.25rem 0 23rem 0;
+  border-top: 1px solid #ddd;
+  z-index: 2;
+  background: #fff;
+  margin-top: -1px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+h3.cta {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  color: #333;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  line-height: 1.3em; }
+
+.profile-foto {
+  float: left;
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  height: 300px;
+  width: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../img/projects/profile-pic.gif");
+  background-repeat: no-repeat;
+  margin-bottom: 2.75rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08); }
+
+/*#about {display: block; position: relative; top: 60px;}
+  */
 /* Footer Section */
 footer {
   padding: 0;
@@ -802,14 +782,6 @@ footer a.pin:hover {
   background-size: cover;
   background-position: top center;
   position: relative; }
-
-footer .pixelsurf:before,
-footer .pixelsurf:after {
-  content: '';
-  display: table; }
-
-footer .pixelsurf:after {
-  clear: both; }
 
 .surf {
   padding-top: 15vh;

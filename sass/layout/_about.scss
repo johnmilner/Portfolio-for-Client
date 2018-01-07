@@ -1,0 +1,48 @@
+  /* About Section */
+  
+  .about {
+    position: relative;
+    text-align: center;
+    padding: 3.25rem 0 23rem 0;
+    border-top: 1px solid #ddd;
+    z-index: 2;
+    background: #fff;
+    margin-top: -1px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  }
+
+  h3.cta {
+    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
+    color: #333;
+    font-weight: 300;
+    letter-spacing: -0.035em;
+    text-rendering: optimizelegibility;
+    font-size: 2vw;
+    line-height: 1.3em;
+  }
+
+  .profile-foto {
+    float: left;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    height: 300px;
+    width: 300px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('../img/projects/profile-pic.gif');
+    background-repeat: no-repeat;
+    margin-bottom: 2.75rem;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+  }
+  
+  /*#about {display: block; position: relative; top: 60px;}
+  */
