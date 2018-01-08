@@ -20,6 +20,15 @@
     max-width: 100%;
   }
 
+  @include respond(mid-desktop) {
+    max-width: 100%;
+  }
+
+  @include respond(hires-desktop) {
+    max-width: 100%;
+  }
+
+
   @include respond(big-desktop) {
     max-width: 100%;
   }
