@@ -51,7 +51,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
         @media (max-width: 96em) { @content };    //1536px
     } 
     @if $breakpoint == hires-desktop {
-        @media (max-width: 112.5em) { @content };    //1536px
+        @media (max-width: 112.5em) { @content };    //1800px
     } 
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content };    //1800px

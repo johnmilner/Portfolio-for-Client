@@ -715,11 +715,14 @@ html {
   content: '';
   display: block;
   height: 0;
-  padding-top: 52.452%; }
-  @media (max-width: 96em) {
+  padding-top: 52.46332%; }
+  @media (max-width: 112.5em) {
     .box1::before {
       padding-top: 52.462%; } }
-  @media (min-width: 112.5em) {
+  @media (max-width: 81.25em) {
+    .box1::before {
+      padding-top: 52.442%; } }
+  @media (max-width: 75em) {
     .box1::before {
       padding-top: 52.452%; } }
 
