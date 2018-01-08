@@ -3,7 +3,7 @@
   .about {
     position: relative;
     text-align: center;
-    padding: 3.25rem 0 23rem 0;
+    padding: 3.25rem 0 4rem 0;
     border-top: 1px solid #ddd;
     z-index: 2;
     background: #fff;
@@ -22,13 +22,13 @@
   }
 
   .profile-foto {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    margin-top: -15rem; /* Half the height */
-    margin-left: -9rem; /* Half the width */
+    // position: absolute;
+    // top: 80%;
+    // left: 50%;
+    // margin-top: -15rem; /* Half the height */
+    // margin-left: -9rem; /* Half the width */
+    margin: 0 auto;
     display: block;
-    margin-right: auto;
     padding-left: 0;
     padding-right: 0;
     height: 300px;

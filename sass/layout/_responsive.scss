@@ -147,6 +147,12 @@ footer a.pin {
   clear: both;
 }
 
+.box1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 33.33333%;
+}
+
   nav ul {
     display: flex;
     justify-content: flex-end;

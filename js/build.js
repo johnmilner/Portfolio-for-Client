@@ -100,7 +100,7 @@ function createProjectGrid() {
             $('#profile-foto').removeClass('fade-in-up');
         }
     }, {
-        offset: '85%'
+        offset: '65%'
     });
     createProjectGrid();
 })(jQuery);

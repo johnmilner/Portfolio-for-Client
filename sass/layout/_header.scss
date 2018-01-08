@@ -10,14 +10,22 @@
 }
 
 .box1 {
-    height: 33.575rem;
+    display: flex;
+    flex: 1;
     background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
     background-size: 1200% 1200%;
     -webkit-animation: dboxRainbow 30s ease infinite;
     -moz-animation: dboxRainbow 30s ease infinite;
     -o-animation: dboxRainbow 30s ease infinite;
     animation: dboxRainbow 30s ease infinite;
-    -webkit-font-smoothing: subpixel-antialiased
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.box1:before {
+  content: '';
+  display: block;
+  height: 0;
+  padding-top: 52.46256789%;
 }
     
   .smooth-scroll {
