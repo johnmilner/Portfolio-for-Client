@@ -34,7 +34,15 @@
   content: '';
   display: block;
   height: 0;
-  padding-top: 52.462%;
+  padding-top: 52.452%;
+
+  // @include respond(desktop) {
+  // padding-top: 52.452%;
+  // }
+
+  @include respond(big-desktop) {
+    padding-top: 52.452%;
+  }
 }
     
   .smooth-scroll {

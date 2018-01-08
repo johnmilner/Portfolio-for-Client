@@ -322,7 +322,9 @@ html {
 
 @media only screen and (min-width: 1699px) {
   .inner-content a.project span {
-    font-size: 2.0625rem; } }
+    font-size: 2.0625rem; }
+  .box1::before {
+    padding-top: 52.452%; } }
 
 @media only screen and (min-width: 400px) {
   .inner-content a.project span {
@@ -576,6 +578,12 @@ html {
   @media (max-width: 75em) {
     .row {
       max-width: 100%; } }
+  @media (max-width: 81.25em) {
+    .row {
+      max-width: 100%; } }
+  @media (min-width: 112.5em) {
+    .row {
+      max-width: 100%; } }
   .row::after {
     content: "";
     display: table;
@@ -701,7 +709,10 @@ html {
   content: '';
   display: block;
   height: 0;
-  padding-top: 52.462%; }
+  padding-top: 52.452%; }
+  @media (min-width: 112.5em) {
+    .box1::before {
+      padding-top: 52.452%; } }
 
 .smooth-scroll {
   animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }

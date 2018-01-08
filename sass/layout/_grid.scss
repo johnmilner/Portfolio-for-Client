@@ -16,6 +16,14 @@
       max-width: 100%;
   }
 
+  @include respond(desktop) {
+    max-width: 100%;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 100%;
+  }
+
   @include clearfix;
 
   [class^="col-"] {
