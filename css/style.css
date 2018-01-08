@@ -716,6 +716,9 @@ html {
   display: block;
   height: 0;
   padding-top: 52.452%; }
+  @media (max-width: 96em) {
+    .box1::before {
+      padding-top: 52.462%; } }
   @media (min-width: 112.5em) {
     .box1::before {
       padding-top: 52.452%; } }

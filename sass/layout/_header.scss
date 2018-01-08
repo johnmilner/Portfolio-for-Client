@@ -40,6 +40,10 @@
   // padding-top: 52.452%;
   // }
 
+  @include respond(mid-desktop) {
+    padding-top: 52.462%;
+  }
+
   @include respond(big-desktop) {
     padding-top: 52.452%;
   }
