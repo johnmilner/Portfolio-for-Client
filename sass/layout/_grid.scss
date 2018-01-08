@@ -12,10 +12,9 @@
   //     }
   // }
 
-  // @include respond(tab-port) {
-  //     max-width: 50rem;
-  //     padding: 0 3rem;
-  // }
+  @include respond(tab-land) {
+      max-width: 100%;
+  }
 
   @include clearfix;
 
@@ -70,6 +69,10 @@
       width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
   }
 
+}
+
+.container {
+  width: 100%;
 }
 
   .box {

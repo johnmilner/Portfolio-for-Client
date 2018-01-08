@@ -3,22 +3,12 @@
   .about {
     position: relative;
     text-align: center;
-    padding: 3.25rem 0 4rem 0;
+    padding: 3.25rem 8rem;
     border-top: 1px solid #ddd;
     z-index: 2;
     background: #fff;
     margin-top: -1px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
-  }
-
-  h3.cta {
-    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
-    color: #333;
-    font-weight: 300;
-    letter-spacing: -0.035em;
-    text-rendering: optimizelegibility;
-    font-size: 2vw;
-    line-height: 1.3em;
   }
 
   .profile-foto {

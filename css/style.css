@@ -97,8 +97,17 @@ p {
   padding-left: 0;
   padding-right: 0;
   color: #666;
-  font-size: 1.125rem;
+  font-size: 1.75rem;
   padding-bottom: 1.25rem; }
+
+h3.cta {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  color: #333;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  text-rendering: optimizelegibility;
+  font-size: 5vw;
+  line-height: 1.3em; }
 
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -242,6 +251,9 @@ ul {
 
 li {
   list-style: none; }
+
+html {
+  font-size: 62.5%; }
 
 /* Box Hover Image Animation */
 .project {
@@ -561,6 +573,9 @@ li {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  @media (max-width: 75em) {
+    .row {
+      max-width: 100%; } }
   .row::after {
     content: "";
     display: table;
@@ -579,6 +594,9 @@ li {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.container {
+  width: 100%; }
 
 .box {
   position: relative;
@@ -661,6 +679,12 @@ li {
   font-size: 2vw;
   padding: 30px 90px 0px 100px;
   line-height: 1.3em; }
+  @media (max-width: 56.25em) {
+    .main-headline {
+      padding: 30px 1rem 0px 100px; } }
+  @media (max-width: 37.5em) {
+    .main-headline {
+      padding: 30px 1rem 0px 100px; } }
 
 .box1 {
   display: flex;
@@ -673,11 +697,11 @@ li {
   animation: dboxRainbow 30s ease infinite;
   -webkit-font-smoothing: subpixel-antialiased; }
 
-.box1:before {
+.box1::before {
   content: '';
   display: block;
   height: 0;
-  padding-top: 52.46256789%; }
+  padding-top: 52.462%; }
 
 .smooth-scroll {
   animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }
@@ -685,14 +709,20 @@ li {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  padding: 100px 75px 0 0;
-  font-size: .75rem; }
+  padding: 10rem 7.5rem 0 0;
+  font-size: 1rem; }
+  @media (max-width: 56.25em) {
+    nav ul {
+      padding: 7rem .5rem 0 0; } }
+  @media (max-width: 37.5em) {
+    nav ul {
+      padding: 3rem .5rem 0 0; } }
 
 nav ul li {
-  padding: 0 20px 0 0; }
+  padding: 0 2rem 0 0; }
 
 nav ul li a {
-  padding: 10px 10px;
+  padding: 1rem 1rem;
   color: white;
   transition: all 0.5s ease; }
 
@@ -712,21 +742,12 @@ nav ul li a:hover {
 .about {
   position: relative;
   text-align: center;
-  padding: 3.25rem 0 4rem 0;
+  padding: 3.25rem 8rem;
   border-top: 1px solid #ddd;
   z-index: 2;
   background: #fff;
   margin-top: -1px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-h3.cta {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  color: #333;
-  font-weight: 300;
-  letter-spacing: -0.035em;
-  text-rendering: optimizelegibility;
-  font-size: 2vw;
-  line-height: 1.3em; }
 
 .profile-foto {
   margin: 0 auto;
@@ -777,7 +798,7 @@ footer a.pin:hover {
   padding-left: 0;
   padding-right: 0;
   height: 100vh;
-  min-height: 700px;
+  min-height: 70rem;
   background-image: url("../img/projects/teahupoo.jpg");
   background-size: cover;
   background-position: top center;
@@ -788,7 +809,7 @@ footer a.pin:hover {
   background: transparent;
   color: #00a699;
   font-family: 'Playfair Display', serif;
-  font-size: 5rem;
+  font-size: 9rem;
   font-weight: 900;
   text-rendering: optimizelegibility;
   z-index: 50;
