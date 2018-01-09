@@ -81,3 +81,9 @@ footer a.pin {
           animation: bounce 2s infinite;
 }
 
+.smooth-scroll {
+    animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up;
+  }
+  
+  
+

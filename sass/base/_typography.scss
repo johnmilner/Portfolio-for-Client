@@ -1,3 +1,26 @@
+.main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  padding: 30px 90px 0px 100px;
+  line-height: 1.3em; 
+
+  @include respond(tab-port) {
+    padding: 30px 1rem 0px 100px;
+  }
+
+  @include respond(phone) {
+    padding: 30px 1rem 0px 100px;
+  }
+}
+
+nav ul {
+  font-size: 1.25rem;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.875rem;
@@ -32,6 +55,6 @@ h1 {
     font-weight: 300;
     letter-spacing: -0.035em;
     text-rendering: optimizelegibility;
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 1.3em;
   }

@@ -72,9 +72,6 @@
     .inner-content a.project span {
       font-size: 2.0625rem;
     }
-    .box1::before {
-      padding-top: 52.452%;
-    }
   }
   @media only screen and (min-width: 400px) {
     .inner-content a.project span {
@@ -135,7 +132,7 @@
   }
   @media only screen and (min-width: 800px) {
     .inner-content a.project em {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
   @media only screen and (min-width: 600px) {
@@ -188,7 +185,7 @@
   /* inner project border */
   @media only screen and (min-width: 800px) {
     .inner-content a.project:hover .overlay {
-      box-shadow: inset 0 0 0 0.9375rem;
+      box-shadow: inset 0 0 0 1.375rem;
     }
   }
   @media only screen and (max-width: 600px) {

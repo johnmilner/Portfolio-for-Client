@@ -75,6 +75,28 @@ footer a.pin {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite; }
 
+.smooth-scroll {
+  animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }
+
+.main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  padding: 30px 90px 0px 100px;
+  line-height: 1.3em; }
+  @media (max-width: 56.25em) {
+    .main-headline {
+      padding: 30px 1rem 0px 100px; } }
+  @media (max-width: 37.5em) {
+    .main-headline {
+      padding: 30px 1rem 0px 100px; } }
+
+nav ul {
+  font-size: 1.25rem; }
+
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.875rem;
@@ -106,7 +128,7 @@ h3.cta {
   font-weight: 300;
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
-  font-size: 5vw;
+  font-size: 4vw;
   line-height: 1.3em; }
 
 /* CSS Normalize */
@@ -322,9 +344,7 @@ html {
 
 @media only screen and (min-width: 1699px) {
   .inner-content a.project span {
-    font-size: 2.0625rem; }
-  .box1::before {
-    padding-top: 52.452%; } }
+    font-size: 2.0625rem; } }
 
 @media only screen and (min-width: 400px) {
   .inner-content a.project span {
@@ -381,7 +401,7 @@ html {
 
 @media only screen and (min-width: 800px) {
   .inner-content a.project em {
-    font-size: 1rem; } }
+    font-size: 1.5rem; } }
 
 @media only screen and (min-width: 600px) {
   .inner-content a.project:hover {
@@ -425,7 +445,7 @@ html {
 /* inner project border */
 @media only screen and (min-width: 800px) {
   .inner-content a.project:hover .overlay {
-    box-shadow: inset 0 0 0 0.9375rem; } }
+    box-shadow: inset 0 0 0 1.375rem; } }
 
 @media only screen and (max-width: 600px) {
   .inner-content a.project span {
@@ -684,22 +704,6 @@ html {
   -webkit-animation-delay: 2.8s;
   animation-delay: 2.8s; }
 
-.main-headline {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  color: white;
-  font-weight: 300;
-  letter-spacing: -0.035em;
-  text-rendering: optimizelegibility;
-  font-size: 2vw;
-  padding: 30px 90px 0px 100px;
-  line-height: 1.3em; }
-  @media (max-width: 56.25em) {
-    .main-headline {
-      padding: 30px 1rem 0px 100px; } }
-  @media (max-width: 37.5em) {
-    .main-headline {
-      padding: 30px 1rem 0px 100px; } }
-
 .box1 {
   display: flex;
   flex: 1;
@@ -726,14 +730,10 @@ html {
     .box1::before {
       padding-top: 52.452%; } }
 
-.smooth-scroll {
-  animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }
-
 nav ul {
   display: flex;
   justify-content: flex-end;
-  padding: 10rem 7.5rem 0 0;
-  font-size: 1rem; }
+  padding: 10rem 7.5rem 0 0; }
   @media (max-width: 56.25em) {
     nav ul {
       padding: 7rem .5rem 0 0; } }
