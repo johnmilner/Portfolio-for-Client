@@ -62,14 +62,10 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   animation-name: fade-in-up; }
 
 @-webkit-keyframes fade-in-up {
-  0% {
+  from {
     opacity: 0;
     -webkit-transform: translateY(60px);
-    transform: translateY(60px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
+    transform: translateY(60px); } }
 
 footer a.pin {
   -webkit-animation: bounce 2s infinite;
@@ -380,7 +376,7 @@ html {
     opacity: 1;
     font-size: 2rem !important;
     position: absolute;
-    bottom: 0.5625rem;
+    bottom: 1.5625rem;
     left: 1.625rem;
     z-index: 6; } }
 

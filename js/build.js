@@ -91,16 +91,16 @@ function createProjectGrid() {
         shadow: false,
         zIndex: -101
     });
-    $('#profile-foto').waypoint(function(direction) {
-        if (direction === 'down') {
-            $('#profile-foto').addClass('fade-in-up');
-            $('#profile-foto').removeClass('fadeOutDown');
-        } else if (direction === 'up') {
-            $('#profile-foto').addClass('fadeOutDown');
-            $('#profile-foto').removeClass('fade-in-up');
-        }
-    }, {
-        offset: '75%'
-    });
+    // $('#profile-foto').waypoint(function(direction) {
+    //     if (direction === 'down') {
+    //         $('#profile-foto').addClass('fade-in-up');
+    //         $('#profile-foto').removeClass('fadeOutDown');
+    //     } else if (direction === 'up') {
+    //         $('#profile-foto').addClass('fadeOutDown');
+    //         $('#profile-foto').removeClass('fade-in-up');
+    //     }
+    // }, {
+    //     offset: '75%'
+    // });
     createProjectGrid();
 })(jQuery);
