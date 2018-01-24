@@ -4,6 +4,10 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+    @include respond(phone) {
+      max-width: 100%;
+    }
+
   // &:not(:last-child) {    
   //     margin-bottom: $gutter-vertical;
 
@@ -66,12 +70,24 @@
 
   .col-1-of-3 {
       //width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-      width: 33.333333%
+      width: 33.333333%;
+
+      @include respond(phone) {
+        display: block;
+        float: left;
+        width: 100%;
+      }
   }
 
   .col-2-of-3 {
       // width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3));
       width: 66.6666667%;
+
+      @include respond(phone) {
+        display: block;
+        float: left;
+        width: 100%;
+      }
   }
 
   .col-1-of-4 {
@@ -90,6 +106,7 @@
 
 .container {
   width: 100%;
+
 }
 
   .box {
@@ -97,6 +114,7 @@
     color:white;
     margin: 0;
     padding: 0;
+
   }
   
   .box::before {

@@ -84,11 +84,12 @@
   @media only screen and (max-width: 600px) {
     .inner-content a.project span {
       opacity: 1;
-      font-size: 1rem !important;
+      font-size: 2rem !important;
       position: absolute;
-      bottom: 1.5625rem;
-      left: 0.625rem;
+      bottom: 0.5625rem;
+      left: 1.625rem;
       z-index: 6;
+
     }
   }
   

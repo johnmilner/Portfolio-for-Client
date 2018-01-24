@@ -9,14 +9,19 @@
     background: #fff;
     margin-top: -1px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+
+      @include respond(phone) {
+        padding: .5rem .5rem;
+      }
   }
 
   .profile-foto {
-    // position: absolute;
-    // top: 80%;
-    // left: 50%;
+    //position: absolute;
+    //top: 80%;
+    //left: 50%;
     // margin-top: -15rem; /* Half the height */
     // margin-left: -9rem; /* Half the width */
+    //transform: translate(-50%);
     margin: 0 auto;
     display: block;
     padding-left: 0;
