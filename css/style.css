@@ -129,7 +129,8 @@ h3.cta {
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 4vw;
-  line-height: 1.3em; }
+  line-height: 1.3em;
+  margin: 1rem; }
   @media (max-width: 37.5em) {
     h3.cta {
       font-size: 8vw; } }

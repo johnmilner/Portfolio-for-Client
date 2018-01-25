@@ -62,6 +62,7 @@ h1 {
     text-rendering: optimizelegibility;
     font-size: 4vw;
     line-height: 1.3em;
+    margin: 1rem;
 
     @include respond(phone) {
       font-size: 8vw;
