@@ -564,6 +564,12 @@ html {
 .box15 .inner-content a.project .overlay {
   color: #f1c40f; }
 
+.box16 .inner-content a.project .overlay {
+  color: #1abc9c; }
+
+.box17 .inner-content a.project .overlay {
+  color: #3498db; }
+
 /* Grid Images */
 .travel {
   background-image: url("../img/projects/hero-small.jpg"); }
@@ -609,6 +615,18 @@ html {
 
 .color {
   background-image: url("../img/projects/color-game.png"); }
+
+.nat {
+  background-image: url("../img/projects/natours.png"); }
+
+.pig {
+  background-image: url("../img/projects/pig-dice.png"); }
+
+.bud {
+  background-image: url("../img/projects/budgety.png"); }
+
+.sma {
+  background-image: url("../img/projects/smart-brain.png"); }
 
 /* Container Grid Setup Here */
 .row {
