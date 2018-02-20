@@ -628,6 +628,9 @@ html {
 .sma {
   background-image: url("../img/projects/smart-brain.png"); }
 
+.rob {
+  background-image: url("../img/projects/robofriends.png"); }
+
 /* Container Grid Setup Here */
 .row {
   max-width: 114rem;
