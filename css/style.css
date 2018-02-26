@@ -855,7 +855,6 @@ footer {
 
 footer a {
   color: #00a699;
-  font-size: 3rem;
   padding: 20px;
   transition: all .5s ease; }
 
@@ -865,6 +864,10 @@ footer a:hover {
 
 footer a.pin:hover {
   opacity: 1; }
+
+.fa {
+  font-size: 4rem;
+  padding-top: 3rem; }
 
 .pixelsurf {
   *zoom: 1;
