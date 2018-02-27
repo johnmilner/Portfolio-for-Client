@@ -139,9 +139,9 @@ h3.cta {
   padding-top: 15vh;
   background: transparent;
   color: #00a699;
-  font-family: 'Playfair Display', serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   font-size: 9rem;
-  font-weight: 900;
+  font-weight: 300;
   text-rendering: optimizelegibility;
   z-index: 50;
   text-align: center;
