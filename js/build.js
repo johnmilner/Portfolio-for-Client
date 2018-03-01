@@ -1,14 +1,3 @@
-import mixitup from '../mixitup';
-
-var mixer = mixitup(containerEl, {
-    selectors: {
-        target: '.mix'
-    },
-    animation: {
-        duration: 300
-    }
-});
-
 /*
 function createWaypoint(element, classToToggle, offset, cb) {
     return jQuery(element).waypoint(function(direction) {
@@ -117,5 +106,24 @@ function createProjectGrid() {
     // }, {
     //     offset: '75%'
     // });
-    createProjectGrid();
+    //createProjectGrid();
+    mixitup('#mix-wrapper', {
+        load: {
+          sort: 'default:asc' /* default:asc */
+        },
+        animation: {
+          effects: 'fade rotateZ(-180deg)', /* fade scale */
+          duration: 700 /* 600 */
+        },
+        classNames: {
+          block: 'box', /* mixitup */
+          elementFilter: 'filter-btn', /* control */
+          elementSort: 'sort-btn' /* control */
+        },
+        selectors: {
+          target: '.mix-target' /* .mix */
+        }
+      });
+
+
 })(jQuery);

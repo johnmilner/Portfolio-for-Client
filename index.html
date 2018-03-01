@@ -38,14 +38,14 @@
                 </div>
 
                 <div class="col-1-of-1">
-                <button type="button" data-filter="all">All</button>
-                <button type="button" data-filter=".category-a">Category A</button>
-                <button type="button" data-filter=".category-b">Category B</button>
-                <button type="button" data-filter=".category-c">Category C</button>
+                    <button type="button" data-filter="all">Show all</button>
+                    <button type="button" class="filter-btn" data-filter=".category-a">Category A</button>
+                    <button type="button" class="filter-btn" data-filter=".category-b">Category B</button>
+                    <button type="button" class="filter-btn" data-filter=".category-c">Category C</button>
                 </div>
-
+                <div id="mix-wrapper">
                 <div class="col-1-of-3">
-                    <figure class="mix category-a box box2" data-order="1">
+                    <figure class="mix-target category-a box box2">
                         <div class="inner-content">
                             <a href="https://smart-brain-jm.herokuapp.com/" target="_blank" class="project sma">
                                 <div class="copy"><span>Smart Brain Face Recognition</span><em>Made with MERN stack</em></div>
@@ -55,7 +55,7 @@
                     </figure>
                 </div>
                 <div class="col-1-of-3">
-                    <figure class="mix category-a box box15" data-order="2">
+                    <figure class="mix-target category-a box box15">
                         <div class="inner-content">
                                 <a href="https://johnmilner.github.io/Natours-Site/" target="_blank" class="project nat">
                                     <div class="copy"><span>Natours Travel Site</span><em>Made with HTML5, CSS3 and Flexbox Goodness</em></div>
@@ -65,7 +65,7 @@
                     </figure>
                 </div>
                 <div class="col-1-of-3">
-                    <figure class="mix category-b box box10" data-order="3">
+                    <figure class="mix-target category-b box box10">
                         <div class="inner-content">
                                 <a href="https://johnmilner.github.io/Robot-Friends/" target="_blank" class="project rob">
                                     <div class="copy"><span>RoboFriends App</span><em>Made with MERN stack and Robot API</em></div>
@@ -74,8 +74,8 @@
                         </div>
                     </figure>
                 </div>
-                <div class="col-1-of-3" id="work">
-                    <figure class="mix category-b box box16" data-order="4">
+                <div class="col-1-of-3">
+                    <figure class="mix-target category-c box box16">
                         <div class="inner-content">
                                 <a href="https://johnmilner.github.io/Pig-Dice-Game/" target="_blank" class="project pig">
                                     <div class="copy"><span>Pig Dice Game</span><em>Made with Vanilla Javascript </em></div>
@@ -84,7 +84,7 @@
                         </div>
                     </figure>
                 </div>
-                <div class="col-1-of-3">
+                <!-- <div class="col-1-of-3">
                     <figure class="box box17">
                         <div class="inner-content">
                                 <a href="https://johnmilner.github.io/Budgety-App/" target="_blank" class="project bud">
@@ -223,6 +223,7 @@
                             </figure>
                         </div>
                     </div>
+                </div> -->
                     <div class="row">
                             <div class="col-1-of-1">
                                 <div id="about" class="about">
@@ -254,6 +255,7 @@
           crossorigin="anonymous"></script>
     <script type="text/javascript" src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script type="text/javascript" src="vendor/mixitup/mixitup.min.js"></script>
     <script type="text/javascript" src="vendor/footer-reveal/footer-reveal.js"></script>
 
 
