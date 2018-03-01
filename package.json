@@ -17,7 +17,13 @@
   },
   "homepage": "https://github.com/johnnycatsd/Portfolio-Site-Final#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "mixitup": "^3.2.2",
     "node-sass": "^4.7.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  {
+    "presets": ["env"]
+  }
 }

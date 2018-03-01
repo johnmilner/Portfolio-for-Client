@@ -1,3 +1,15 @@
+import mixitup from '../mixitup';
+
+var mixer = mixitup(containerEl, {
+    selectors: {
+        target: '.mix'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+/*
 function createWaypoint(element, classToToggle, offset, cb) {
     return jQuery(element).waypoint(function(direction) {
         jQuery(element).toggleClass(classToToggle);
@@ -74,6 +86,7 @@ function createProjectGrid() {
     }
     gridInit();
 }
+*/
 
 (function($) {
     "use strict";
