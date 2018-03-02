@@ -91,6 +91,20 @@ function createProjectGrid() {
             }
         }
     });
+
+    var elem = document.querySelector("#headroom");
+    var headroom = new Headroom(elem, {
+        "offset": 205,
+        "tolerance": 5,
+        "classes": {
+          "initial": "animated",
+          "pinned": "slideDown",
+          "unpinned": "slideUp"
+        }
+      });
+    headroom.init();
+
+
     $('footer').footerReveal({
         shadow: false,
         zIndex: -101
