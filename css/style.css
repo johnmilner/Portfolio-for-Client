@@ -74,30 +74,11 @@ footer a.pin {
 .smooth-scroll {
   animation: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 fade-in-up; }
 
-.main-headline {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  color: white;
-  font-weight: 300;
-  letter-spacing: -0.035em;
-  text-rendering: optimizelegibility;
-  font-size: 2vw;
-  line-height: 1.3em;
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap; }
-
 .main-headline:first-of-type {
   /* For increasing performance 
-                       ID/Class should've been used. 
-                       For a small demo 
-                       it's okaish for now */
+    ID/Class should've been used. 
+    For a small demo 
+    it's okaish for now */
   animation: showup 7s forwards;
   animation-iteration-count: 1; }
 
@@ -147,6 +128,25 @@ footer a.pin {
   100% {
     opacity: 1;
     width: 90%; } }
+
+.main-headline {
+  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  line-height: 1.3em;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap; }
 
 nav ul {
   font-size: 1.25rem; }
@@ -855,6 +855,59 @@ button.sort-btn-active {
   -webkit-animation-delay: 2.8s;
   animation-delay: 2.8s; }
 
+.headroom {
+  height: 70px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #eee;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+  padding-left: 4%;
+  padding-right: 4%;
+  transition: all .25s ease-in-out;
+  backface-visibility: hidden;
+  z-index: 100; }
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear; }
+
+.headroom--pinned {
+  transform: translateY(0%); }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
+
+.nav-logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  height: 50px;
+  width: 50px;
+  background: url("../img/projects/nav-logo.png");
+  border: 3px solid white;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem .5rem 0 0; }
+
+nav ul li {
+  padding: 0 2rem 0 0; }
+
+nav ul li a {
+  padding: 1rem 1rem;
+  color: slategray;
+  transition: all 0.5s ease; }
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease; }
+
 .box1 {
   display: flex;
   flex: 1;
@@ -880,46 +933,6 @@ button.sort-btn-active {
   @media (max-width: 75em) {
     .box1::before {
       padding-top: 52.452%; } }
-
-.headroom {
-  height: 70px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  background-color: #40474d;
-  padding-left: 4%;
-  padding-right: 4%;
-  transition: all .25s ease-in-out;
-  backface-visibility: hidden;
-  z-index: 100; }
-
-.headroom {
-  will-change: transform;
-  transition: transform 200ms linear; }
-
-.headroom--pinned {
-  transform: translateY(0%); }
-
-.headroom--unpinned {
-  transform: translateY(-100%); }
-
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  padding: 3rem .5rem 0 0; }
-
-nav ul li {
-  padding: 0 2rem 0 0; }
-
-nav ul li a {
-  padding: 1rem 1rem;
-  color: white;
-  transition: all 0.5s ease; }
-
-nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s ease; }
 
 .hero-btn {
   transition: color 0.5s ease; }
