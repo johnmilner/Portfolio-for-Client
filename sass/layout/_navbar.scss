@@ -42,8 +42,17 @@
     border: 3px solid white;
     border-radius: 50%;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    
   }
+
+  .nav-logo:hover { 
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: scale(1.1) !important; 
+      transition: all .2s ease-in-out !important;
+    }
+
       
   nav ul {
     display: flex;
@@ -69,6 +78,6 @@
     }
     
     nav ul li a:hover {
-      background: rgba(255,255,255,.3);
+      //background: rgba(255,255,255,.3);
       transition: all 0.5s ease;
     }

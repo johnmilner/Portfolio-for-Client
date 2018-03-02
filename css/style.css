@@ -891,6 +891,12 @@ button.sort-btn-active {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.nav-logo:hover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.1) !important;
+  transition: all .2s ease-in-out !important; }
+
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -905,7 +911,6 @@ nav ul li a {
   transition: all 0.5s ease; }
 
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.3);
   transition: all 0.5s ease; }
 
 .box1 {
