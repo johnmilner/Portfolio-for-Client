@@ -141,12 +141,12 @@ footer a.pin {
     opacity: 1;
     width: 0px; }
   30% {
-    width: 70%; }
+    width: 80%; }
   80% {
     opacity: 1; }
   100% {
     opacity: 1;
-    width: 70%; } }
+    width: 90%; } }
 
 nav ul {
   font-size: 1.25rem; }
