@@ -92,14 +92,14 @@ function createProjectGrid() {
         }
     });
 
-    var elem = document.querySelector("#headroom");
+    var elem = document.querySelector(".headroom");
     var headroom = new Headroom(elem, {
         "offset": 205,
         "tolerance": 5,
         "classes": {
-          "initial": "animated",
-          "pinned": "slideDown",
-          "unpinned": "slideUp"
+           initial: "headroom",
+           pinned : "headroom--pinned",
+           unpinned : "headroom--unpinned"
         }
       });
     headroom.init();
