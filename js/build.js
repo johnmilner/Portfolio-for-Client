@@ -104,25 +104,6 @@ function createProjectGrid() {
       });
     headroom.init();
 
-    //TIMELINE
-    $(function() {
-  
-        var watchScroll =0;
-        var rightComments = $('.r-event .event-body');
-          var leftComments = $('.l-event .event-body');
-          TweenMax.staggerFrom(rightComments, 1, {x: 100, ease:Bounce.easeOut},1);
-          TweenMax.staggerFrom(leftComments, 1, {x: -100,ease:Bounce.easeOut},1);
-        
-          $(window).on('scroll', function() {
-            var scrollTop = $(window).scrollTop();
-            (scrollTop > watchScroll)?
-            $('footer').addClass('footer-up'):
-              $('footer').removeClass('footer-up');
-            
-            watchScroll = scrollTop;
-          })
-        })
-
 
     $('footer').footerReveal({
         shadow: false,
@@ -144,10 +125,12 @@ function createProjectGrid() {
         load: {
           sort: 'default:asc' /* default:asc */
         },
-        animation: {
-          effects: 'fade rotateZ(-180deg)', /* fade scale */
-          duration: 700 /* 600 */
-        },
+        // animation: {
+        //     duration: 700,
+        //     effects: 'fade translateY(600%) stagger(35ms)',
+        //     easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
+        //     reverseOut: true
+        //   },
         classNames: {
           block: 'box', /* mixitup */
           elementFilter: 'filter-btn', /* control */
