@@ -92,21 +92,21 @@ function createProjectGrid() {
         }
     });
 
-    var elem = document.querySelector(".headroom");
-    var headroom = new Headroom(elem, {
-        "offset": 205,
-        "tolerance": 5,
-        animation: {
-            effects: 'rotateY(-25deg)',
-            perspectiveDistance: '2000px'
-        },
-        "classes": {
-           initial: "headroom",
-           pinned : "headroom--pinned",
-           unpinned : "headroom--unpinned"
-        }
-      });
-    headroom.init();
+    // var elem = document.querySelector(".headroom");
+    // var headroom = new Headroom(elem, {
+    //     "offset": 205,
+    //     "tolerance": 5,
+    //     animation: {
+    //         effects: 'rotateY(-25deg)',
+    //         perspectiveDistance: '2000px'
+    //     },
+    //     "classes": {
+    //        initial: "headroom",
+    //        pinned : "headroom--pinned",
+    //        unpinned : "headroom--unpinned"
+    //     }
+    //   });
+    // headroom.init();
 
 
     $('footer').footerReveal({
