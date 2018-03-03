@@ -86,10 +86,7 @@ footer a.pin {
   }
 
 
-  .main-headline:first-of-type {    /* For increasing performance 
-    ID/Class should've been used. 
-    For a small demo 
-    it's okaish for now */
+  .main-headline:first-of-type {    
 animation: showup 7s forwards;
 animation-iteration-count: 1;
 }
@@ -117,7 +114,7 @@ animation-iteration-count: 1;
 0% { margin-left:-800px; opacity:0;}
 20% { margin-left:-800px; }
 35% { margin-left:0px; }
-100% { margin-left:0px; opacity:100;}
+100% { margin-left:0px; opacity:1;}
 }
 
 @keyframes reveal {
