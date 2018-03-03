@@ -233,12 +233,13 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   outline: 0;
-  text-decoration-line: none;
-  text-decoration-style: none;
-  text-decoration-color: none; }
+  text-decoration: none !important;
+  text-color: slategrey !important; }
 
 a:hover, a:active, a:focus {
-  outline: 0; }
+  outline: 0;
+  text-decoration: none !important;
+  color: slategrey !important; }
 
 ul {
   margin: 0;
@@ -1030,12 +1031,6 @@ body {
   transform: scale(1.1) !important;
   transition: all .2s ease-in-out !important; }
 
-a {
-  text-decoration: none !important; }
-
-a:hover {
-  text-color: slategrey !important; }
-
 nav ul {
   font-family: 'Roboto', monospace, sans-serif;
   display: flex;
@@ -1051,6 +1046,7 @@ nav ul li a {
   transition: all 0.5s ease; }
 
 nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
   transition: all 0.5s ease; }
 
 .box1 {

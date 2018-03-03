@@ -53,16 +53,7 @@
       transition: all .2s ease-in-out !important;
 }
 
-  a {
-    text-decoration: none !important;
-  }
-
-  a:hover {
-    text-color: slategrey !important;
-
-  }
-
-      
+    
   nav ul {
     font-family: 'Roboto', monospace, sans-serif;
     display: flex;
@@ -88,7 +79,7 @@
     }
     
     nav ul li a:hover {
-      //background: rgba(255,255,255,.3);
+      background: rgba(255,255,255,.3);
       transition: all 0.5s ease;
     }
 
