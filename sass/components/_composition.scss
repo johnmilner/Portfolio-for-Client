@@ -1,6 +1,6 @@
 .composition {
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50%;
@@ -67,4 +67,12 @@
         transform: scale(.95);
     }
     //composition:hover composition__photo:not(:hover) {
+}
+
+.fa-angle-down {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
 }
