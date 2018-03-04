@@ -86,16 +86,16 @@ footer a.pin {
   }
 
 
-  .main-headline:first-of-type {    
-animation: showup 7s forwards;
-animation-iteration-count: 1;
-}
+//   .main-headline:first-of-type {    
+// animation: showup 7s forwards;
+// animation-iteration-count: 1;
+// }
 
-.main-headline:last-of-type {
-width:0px;
-animation: reveal 7s forwards;
-animation-iteration-count: 1;
-}
+// .main-headline:last-of-type {
+// width:0px;
+// animation: reveal 7s forwards;
+// animation-iteration-count: 1;
+// }
 
 .main-headline:last-of-type span {
 margin-left:-355px;
@@ -103,12 +103,12 @@ animation: slidein 7s forwards;
 animation-iteration-count: 1;
 }
 
-@keyframes showup {
-0% {opacity:0;}
-20% {opacity:1;}
-80% {opacity:1;}
-100% {opacity:1;}
-}
+// @keyframes showup {
+// 0% {opacity:0;}
+// 20% {opacity:1;}
+// 80% {opacity:1;}
+// 100% {opacity:1;}
+// }
 
 @keyframes slidein {
 0% { margin-left:-800px; opacity:0;}
@@ -117,13 +117,13 @@ animation-iteration-count: 1;
 100% { margin-left:0px; opacity:1;}
 }
 
-@keyframes reveal {
-0% {opacity:0;width:0px;}
-20% {opacity:1;width:0px;}
-30% {width:80%;}
-80% {opacity:1;}
-100% {opacity:1;width:90%;}
-}
+// @keyframes reveal {
+// 0% {opacity:0;width:0px;}
+// 20% {opacity:1;width:0px;}
+// 30% {width:80%;}
+// 80% {opacity:1;}
+// 100% {opacity:1;width:90%;}
+// }
 
 
   

@@ -34,6 +34,22 @@
   // }
 }
 
+.main-headline {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.composition {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 50%;
+}
+
   .hero-btn {
     transition: color 0.5s ease;
   }
