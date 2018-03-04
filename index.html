@@ -22,7 +22,7 @@
  <div class="container">
         <div class="row">
                 <div class="col-1-of-1">
-                    <div class="box1">
+                    <div class="box1" id="home">
                             <div class="navigation">
                                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
                         
@@ -34,13 +34,14 @@
                         
                                     <nav class="navigation__nav">
                                         <ul class="navigation__list">
-                                            <li class="navigation__item js-scroll-trigger"><a href="#button-wrapper" class="navigation__link"><span>01</span>Projects</a></li>
+                                            <li class="navigation__item js-scroll-trigger"><a href="#home" class="navigation__link"><span>01</span>Home</a></li>
+                                            <li class="navigation__item js-scroll-trigger"><a href="#projects" class="navigation__link"><span>02</span>Projects</a></li>
 
-                                            <li class="navigation__item"><a href="#about" class="navigation__link"><span>02</span>About</a></li>
+                                            <li class="navigation__item"><a href="#about" class="navigation__link"><span>03</span>About</a></li>
 
-                                            <li class="navigation__item"><a href="#pres" class="navigation__link"><span>03</span>Presentations</a></li>
-                                            <li class="navigation__item"><a href="#contact" class="navigation__link"><span>04</span>Contact</a></li>
-                                            <li class="navigation__item"><a href="#contact" class="navigation__link"><span>05</span>Book now</a></li>
+                                            <li class="navigation__item"><a href="#pres" class="navigation__link"><span>04</span>Presentations</a></li>
+                                            <li class="navigation__item"><a href="#contact" class="navigation__link"><span>05</span>Contact</a></li>
+                                            
                                             </ul>
                                     </nav>
                                 </div>
@@ -61,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="col-1-of-1" id="button-wrapper">
+                <div class="col-1-of-1" id="projects">
                     <button type="button" data-filter="all">Show all</button>
                     <button type="button" class="filter-btn" data-filter=".category-a">UX Projects</button>
                     <button type="button" class="filter-btn" data-filter=".category-b">Side Hustles</button>
