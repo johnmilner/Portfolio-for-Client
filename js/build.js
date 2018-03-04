@@ -79,17 +79,6 @@ function createProjectGrid() {
 
 (function($) {
     "use strict";
-    // var input = $("input[type=checkbox]");
-    // console.log(input);
-    //$(input).prop('checked', false); 
-    //$('input[type=checkbox]')[0].checked = false;
-    //$('input[type=checkbox]').removeAttr('checked')
-    //$('input[name *= ckbItem]').prop('checked', false);
-    //$('#navi-toggle').get(0).checked = false;
-    // if($("input[type=checkbox]").is(':checked')){
-    //     alert("Checked");
-    // }
-    // console.log('input[type=checkbox]');
 
     // cache DOM
     const navigation = document.querySelector('.navigation')

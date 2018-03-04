@@ -134,8 +134,8 @@ footer a.pin {
   font-size: 3vw;
   line-height: 1.3em;
   position: absolute;
-  left: 10%;
-  top: 50%;
+  left: 5%;
+  top: 60%;
   transform: translate(-50%, -50%);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -995,6 +995,58 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+.composition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 50%; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333333%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1.2); } }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: -1rem;
+          transform: scale(1.3);
+          z-index: 100; } }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 1rem;
+          left: 0;
+          transform: scale(1.1); } }
+    .composition__photo:hover {
+      outline: 1.5rem solid #7ed56f;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 /* Container Grid Setup Here */
 .row {
   max-width: 114rem;
@@ -1025,6 +1077,8 @@ body {
     float: left; }
   .row .col-1-of-1 {
     width: 100%; }
+  .row .col-1-of-2 {
+    width: 50%; }
   .row .col-1-of-3 {
     width: 33.333333%; }
     @media (max-width: 37.5em) {
@@ -1153,7 +1207,7 @@ body {
   transition: color 0.5s ease; }
 
 .hero-btn:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   transition: color 0.5s ease;
   background: none; }
 
