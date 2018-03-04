@@ -77,6 +77,11 @@ function createProjectGrid() {
 }
 */
 
+
+
+
+
+
 window.onload = function () {
 
 	var parallaxBox = document.querySelector('.composition');
@@ -140,6 +145,7 @@ function mouseParallax ( id, left, top, mouseX, mouseY, speed ) {
         }
     });
 
+    
     $('footer').footerReveal({
         shadow: false,
         zIndex: -101
@@ -175,6 +181,7 @@ function mouseParallax ( id, left, top, mouseX, mouseY, speed ) {
     //     offset: '75%'
     // });
     //createProjectGrid();
+
     mixitup('#mix-wrapper', {
         load: {
           sort: 'default:asc' /* default:asc */
@@ -197,3 +204,26 @@ function mouseParallax ( id, left, top, mouseX, mouseY, speed ) {
 
 
 })(jQuery);
+
+
+$('document').ready(function(){
+    var transEffect = Barba.BaseTransition.extend({
+        start: function(){
+          this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+        },
+        fadeInNewcontent: function(nc) {
+          nc.hide();
+          var _this = this;
+          $(this.oldContainer).fadeOut(1000).promise().done(() => {
+            nc.css('visibility','visible');
+            nc.fadeIn(1000, function(){
+              _this.done();
+            })
+          });
+        }
+    });
+    Barba.Pjax.getTransition = function() {
+      return transEffect;
+    }
+    Barba.Pjax.start();
+  });
