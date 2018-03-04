@@ -79,7 +79,27 @@ function createProjectGrid() {
 
 (function($) {
     "use strict";
+    // var input = $("input[type=checkbox]");
+    // console.log(input);
+    //$(input).prop('checked', false); 
+    //$('input[type=checkbox]')[0].checked = false;
+    //$('input[type=checkbox]').removeAttr('checked')
+    //$('input[name *= ckbItem]').prop('checked', false);
+    //$('#navi-toggle').get(0).checked = false;
+    // if($("input[type=checkbox]").is(':checked')){
+    //     alert("Checked");
+    // }
+    // console.log('input[type=checkbox]');
+
+    // cache DOM
+    const navigation = document.querySelector('.navigation')
+    const navCheckbox = navigation.querySelector('.navigation__checkbox')
+    const navItems = navigation.querySelectorAll('.navigation__item')
+    navItems.forEach(item =>
+    item.addEventListener('click', _ => navCheckbox.checked = false))
+
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

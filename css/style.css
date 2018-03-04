@@ -233,12 +233,14 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   outline: 0;
-  text-decoration: none !important;
-  text-color: slategrey !important; }
+  text-decoration: none !important; }
 
-a:hover, a:active, a:focus {
+a:hover {
   outline: 0;
   text-decoration: none !important; }
+
+a:active, a:focus {
+  color: rgba(255, 255, 255, 0.5); }
 
 ul {
   margin: 0;
@@ -1120,70 +1122,6 @@ body {
 .visible-grid-item:nth-child(14) div {
   -webkit-animation-delay: 2.8s;
   animation-delay: 2.8s; }
-
-.headroom {
-  height: 70px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  background-color: white;
-  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
-  padding-left: 4%;
-  padding-right: 4%;
-  transition: all .25s ease-in-out;
-  backface-visibility: hidden;
-  z-index: 100; }
-
-.headroom {
-  will-change: transform;
-  transition: transform 200ms linear; }
-
-.headroom--pinned {
-  transform: translateY(0%); }
-
-.headroom--unpinned {
-  transform: translateY(-100%); }
-
-.nav-logo {
-  position: absolute;
-  top: 1.5rem;
-  left: 2rem;
-  height: 50px;
-  width: 50px;
-  background: url("../img/projects/nav-logo.png");
-  border: 3px solid white;
-  border-radius: 50%;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.nav-logo:hover {
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: scale(1.1) !important;
-  transition: all .2s ease-in-out !important; }
-
-nav ul {
-  font-family: 'Roboto', monospace, sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  display: flex;
-  justify-content: flex-start;
-  padding: 2.75rem .5rem 0 0; }
-
-nav ul li {
-  padding: 0 2rem 0 0; }
-
-nav ul li a {
-  padding: 1rem 1rem;
-  color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  transition: all 0.5s ease; }
-
-nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: #0e83cd;
-  transition: color 0.5s ease; }
 
 .box1 {
   display: flex;
