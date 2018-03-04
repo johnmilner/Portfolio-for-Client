@@ -101,6 +101,11 @@ function createProjectGrid() {
         }
     });
 
+    $('footer').footerReveal({
+        shadow: false,
+        zIndex: -101
+    });
+
     // var elem = document.querySelector(".headroom");
     // var headroom = new Headroom(elem, {
     //     "offset": 205,
@@ -118,10 +123,7 @@ function createProjectGrid() {
     // headroom.init();
 
 
-    $('footer').footerReveal({
-        shadow: false,
-        zIndex: -101
-    });
+    
     // $('#profile-foto').waypoint(function(direction) {
     //     if (direction === 'down') {
     //         $('#profile-foto').addClass('fade-in-up');
