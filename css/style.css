@@ -1022,11 +1022,10 @@ body {
   transform: scale(0.95); }
 
 .fa-angle-down {
-  position: absolute;
-  top: 89%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  color: white; }
+  color: white;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite; }
 
 /* Container Grid Setup Here */
 .row {
@@ -1197,6 +1196,12 @@ body {
   transform: translate(-50%, -50%);
   height: 50%;
   width: 50%; }
+
+.fa-angle-down {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, 50%); }
 
 .hero-btn {
   transition: color 0.5s ease; }

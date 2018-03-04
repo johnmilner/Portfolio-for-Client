@@ -50,6 +50,13 @@
   width: 50%;
 }
 
+.fa-angle-down {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
   .hero-btn {
     transition: color 0.5s ease;
   }
