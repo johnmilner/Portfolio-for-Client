@@ -8,26 +8,73 @@ var browserify = require('browserify'),
     autoprefixer = require('gulp-autoprefixer'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    es = require('event-stream'),
+    glob = require("glob"),
+    rename = require("gulp-rename"),
+    concat = require('gulp-concat');
 
 /* pathConfig*/
 var entryPoint = './js/build.js',
     browserDir = './',
     sassWatchPath = './sass/**/*.scss',
     jsWatchPath = './js/**/*.js',
-    htmlWatchPath = './**/*.html';
+    htmlWatchPath = './**/*.html'
 /**/
 
-gulp.task('js', function () {
-    return browserify(entryPoint, {debug: true, extensions: ['es6']})
-        .transform("babelify", {presets: ["es2015"]})
-        .bundle()
-        .pipe(source('bundle.js'))
-        .pipe(buffer())
-        .pipe(sourcemaps.init({loadMaps: true}))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./build/js'))
-        .pipe(browserSync.reload({stream: true}));
+// gulp.task('js', function () {
+//     //return browserify(entryPoint, {debug: true, extensions: ['es6']})
+//     return browserify(['js/**/*.js', entryPoint], {debug: true, extensions: ['es6'//]})
+//         .transform("babelify", {presets: ["es2015"]})
+//         .bundle()
+//         .pipe(source('bundle.js'))
+//         .pipe(buffer())
+//         .pipe(sourcemaps.init({loadMaps: true}))
+//         .pipe(sourcemaps.write())
+//         .pipe(gulp.dest('./build/js'))
+//         .pipe(browserSync.reload({stream: true}));
+// });
+
+// gulp.task('js', function() {
+//     // Your main files
+//     var files = [
+//         './js/barba.js',
+//         './js/footer-reveal.js',
+//         './js/jquery.easing.min.js',
+//         './js/jquery.min.js',
+//         './js/mixitup.min.js',
+//         './js/build.js'
+//     ];
+//     // Create a stream array
+//     var tasks = files.map(function(entry) {
+//         return browserify({ entries: [entry] })
+//             .bundle()
+//             .pipe(source(entry))
+//             .pipe(gulp.dest('./build/js')); 
+//         });
+//     return es.merge.apply(null, tasks);
+// });
+
+// gulp.task('js', function() {
+//     return glob('./js/*.js', function(err, files) {
+//         var tasks = files.map(function(entry) {
+//             return browserify({ entries: [entry] })
+//                 .bundle()
+//                 .pipe(source(entry))
+//                 .pipe(rename({
+//                     extname: '.bundle.js'
+//                 }))
+//                 .pipe(gulp.dest('./build/js')); 
+//             });
+//         return es.merge.apply(null, tasks);
+//     })
+// });
+
+
+gulp.task('js', function() {
+  return gulp.src('js/**/*.js')
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task('browser-sync', function () {
