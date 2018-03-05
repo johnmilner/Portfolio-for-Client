@@ -84,6 +84,13 @@ function createProjectGrid() {
 
 window.onload = function () {
 
+    // cache DOM
+    const navigation = document.querySelector('.container .navigation')
+    const navCheckbox = navigation.querySelector('.navigation__checkbox')
+    const navItems = navigation.querySelectorAll('.navigation__item')
+    navItems.forEach(item =>
+    item.addEventListener('click', _ => navCheckbox.checked = false))
+
 	var parallaxBox = document.querySelector('.composition');
 	var c1left = document.getElementById ( 'i1' ).offsetLeft,
 	c1top = document.getElementById ( 'i1' ).offsetTop,
@@ -104,127 +111,123 @@ window.onload = function () {
 		mouseParallax ( 'i3', c3left, c3top, x, y, 30 );
 		//mouseParallax ( 'l4', c4left, c4top, x, y, 65 );
 	}
-	
-}
-
-function mouseParallax ( id, left, top, mouseX, mouseY, speed ) {
-	var obj = document.getElementById ( id );
-	var parentObj = obj.parentNode,
-	containerWidth = parseInt( parentObj.offsetWidth ),
-	containerHeight = parseInt( parentObj.offsetHeight );
-	obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
-	obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
-}
-
-
-
-
-
-
-(function($) {
-    "use strict";
-
-    // cache DOM
-    const navigation = document.querySelector('.navigation')
-    const navCheckbox = navigation.querySelector('.navigation__checkbox')
-    const navItems = navigation.querySelectorAll('.navigation__item')
-    navItems.forEach(item =>
-    item.addEventListener('click', _ => navCheckbox.checked = false))
-
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: (target.offset().top - 60)
-                }, 1000, "easeInOutExpo");
-                return false;
-            }
-        }
-    });
-
     
-    $('footer').footerReveal({
-        shadow: false,
-        zIndex: -101
-    });
-
-    // var elem = document.querySelector(".headroom");
-    // var headroom = new Headroom(elem, {
-    //     "offset": 205,
-    //     "tolerance": 5,
-    //     animation: {
-    //         effects: 'rotateY(-25deg)',
-    //         perspectiveDistance: '2000px'
-    //     },
-    //     "classes": {
-    //        initial: "headroom",
-    //        pinned : "headroom--pinned",
-    //        unpinned : "headroom--unpinned"
-    //     }
-    //   });
-    // headroom.init();
-
-
-    
-    // $('#profile-foto').waypoint(function(direction) {
-    //     if (direction === 'down') {
-    //         $('#profile-foto').addClass('fade-in-up');
-    //         $('#profile-foto').removeClass('fadeOutDown');
-    //     } else if (direction === 'up') {
-    //         $('#profile-foto').addClass('fadeOutDown');
-    //         $('#profile-foto').removeClass('fade-in-up');
-    //     }
-    // }, {
-    //     offset: '75%'
-    // });
-    //createProjectGrid();
-
-    mixitup('#mix-wrapper', {
-        load: {
-          sort: 'default:asc' /* default:asc */
-        },
-        // animation: {
-        //     duration: 700,
-        //     effects: 'fade translateY(600%) stagger(35ms)',
-        //     easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
-        //     reverseOut: true
-        //   },
-        classNames: {
-          block: 'box', /* mixitup */
-          elementFilter: 'filter-btn', /* control */
-          elementSort: 'sort-btn' /* control */
-        },
-        selectors: {
-          target: '.mix-target' /* .mix */
-        }
-      });
-
-
-})(jQuery);
-
-
-$('document').ready(function(){
-    var transEffect = Barba.BaseTransition.extend({
-        start: function(){
-          this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
-        },
-        fadeInNewcontent: function(nc) {
-          nc.hide();
-          var _this = this;
-          $(this.oldContainer).fadeOut(1000).promise().done(() => {
-            nc.css('visibility','visible');
-            nc.fadeIn(1000, function(){
-              _this.done();
-            })
-          });
-        }
-    });
-    Barba.Pjax.cacheEnabled = false;
-    Barba.Pjax.getTransition = function() {
-      return transEffect;
+    function mouseParallax ( id, left, top, mouseX, mouseY, speed ) {
+        var obj = document.getElementById ( id );
+        var parentObj = obj.parentNode,
+        containerWidth = parseInt( parentObj.offsetWidth ),
+        containerHeight = parseInt( parentObj.offsetHeight );
+        obj.style.left = left - ( ( ( mouseX - ( parseInt( obj.offsetWidth ) / 2 + left ) ) / containerWidth ) * speed ) + 'px';
+        obj.style.top = top - ( ( ( mouseY - ( parseInt( obj.offsetHeight ) / 2 + top ) ) / containerHeight ) * speed ) + 'px';
     }
-    Barba.Pjax.start();
-  });
+
+
+    (function($) {
+        "use strict";
+    
+        var transEffect = Barba.BaseTransition.extend({
+            start: function(){
+              this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+            },
+            fadeInNewcontent: function(nc) {
+              nc.hide();
+              var _this = this;
+              $(this.oldContainer).fadeOut(1000).promise().done(() => {
+                nc.css('visibility','visible');
+                nc.fadeIn(1000, function(){
+                  _this.done();
+                })
+              });
+            }
+        });
+        Barba.Pjax.cacheEnabled = false;
+        Barba.Pjax.getTransition = function() {
+          return transEffect;
+        }
+        Barba.Pjax.start();
+    
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+            
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: (target.offset().top - 60)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+            }
+        });
+    
+        
+        $('footer').footerReveal({
+            shadow: false,
+            zIndex: -101
+        });
+    
+        // var elem = document.querySelector(".headroom");
+        // var headroom = new Headroom(elem, {
+        //     "offset": 205,
+        //     "tolerance": 5,
+        //     animation: {
+        //         effects: 'rotateY(-25deg)',
+        //         perspectiveDistance: '2000px'
+        //     },
+        //     "classes": {
+        //        initial: "headroom",
+        //        pinned : "headroom--pinned",
+        //        unpinned : "headroom--unpinned"
+        //     }
+        //   });
+        // headroom.init();
+    
+    
+        
+        // $('#profile-foto').waypoint(function(direction) {
+        //     if (direction === 'down') {
+        //         $('#profile-foto').addClass('fade-in-up');
+        //         $('#profile-foto').removeClass('fadeOutDown');
+        //     } else if (direction === 'up') {
+        //         $('#profile-foto').addClass('fadeOutDown');
+        //         $('#profile-foto').removeClass('fade-in-up');
+        //     }
+        // }, {
+        //     offset: '75%'
+        // });
+        //createProjectGrid();
+    
+        mixitup('#mix-wrapper', {
+            load: {
+              sort: 'default:asc' /* default:asc */
+            },
+            // animation: {
+            //     duration: 700,
+            //     effects: 'fade translateY(600%) stagger(35ms)',
+            //     easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
+            //     reverseOut: true
+            //   },
+            classNames: {
+              block: 'box', /* mixitup */
+              elementFilter: 'filter-btn', /* control */
+              elementSort: 'sort-btn' /* control */
+            },
+            selectors: {
+              target: '.mix-target' /* .mix */
+            }
+          });
+    
+    
+    })(jQuery);
+}
+
+
+
+
+
+
+
+
+
+
+
