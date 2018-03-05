@@ -222,6 +222,7 @@ $('document').ready(function(){
           });
         }
     });
+    Barba.Pjax.cacheEnabled = false;
     Barba.Pjax.getTransition = function() {
       return transEffect;
     }
