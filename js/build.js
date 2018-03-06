@@ -156,55 +156,7 @@
 //         });
 //     }
 //   });
-//   Barba.Pjax.cacheEnabled = true;
-//   Barba.Dispatcher.on("newPageReady", function() {
 
-//     $(document).ready(function() {
-
-//       $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-//         if (
-//           location.pathname.replace(/^\//, "") ==
-//             this.pathname.replace(/^\//, "") &&
-//           location.hostname == this.hostname
-//         ) {
-//           var target = $(this.hash);
-//           target = target.length
-//             ? target
-//             : $("[name=" + this.hash.slice(1) + "]");
-//           if (target.length) {
-//             $("html, body").animate(
-//               {
-//                 scrollTop: target.offset().top - 60
-//               },
-//               1000,
-//               "easeInOutExpo"
-//             );
-//             return false;
-//           }
-//         }
-//       });
-
-//       mixitup("#mix-wrapper", {
-//         load: {
-//           sort: "default:asc" /* default:asc */
-//         },
-//         // animation: {
-//         //     duration: 700,
-//         //     effects: 'fade translateY(600%) stagger(35ms)',
-//         //     easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
-//         //     reverseOut: true
-//         //   },
-//         classNames: {
-//           block: "box" /* mixitup */,
-//           elementFilter: "filter-btn" /* control */,
-//           elementSort: "sort-btn" /* control */
-//         },
-//         selectors: {
-//           target: ".mix-target" /* .mix */
-//         }
-//       });
-//     });
-//   });
 
 //   // Barba.Dispatcher.on('newPageReady', () => {
 //   //     const routes = new Router(pages);
@@ -215,6 +167,21 @@
 //   };
 
 ;(function($) { 
+
+    "use strict";
+  // cache DOM
+  var navigation = document.querySelector(".barba-container .navigation");
+  var navCheckbox = navigation.querySelector(".navigation__checkbox");
+  var navItems = navigation.querySelectorAll(".navigation__item");
+  // navItems.forEach(item =>
+  //   item.addEventListener("click", _ => (navCheckbox.checked = false))
+  // );
+  navItems.forEach(function (item) {
+    return item.addEventListener("click", function (_) {
+      return navCheckbox.checked = false;
+    });
+  });
+
   Barba.Pjax.start();  
   var transEffect = Barba.BaseTransition.extend({
       start: function(){
@@ -234,6 +201,67 @@
   Barba.Pjax.getTransition = function() {
     return transEffect;
   }
+
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        if (
+          location.pathname.replace(/^\//, "") ==
+            this.pathname.replace(/^\//, "") &&
+          location.hostname == this.hostname
+        ) {
+          var target = $(this.hash);
+          target = target.length
+            ? target
+            : $("[name=" + this.hash.slice(1) + "]");
+          if (target.length) {
+            $("html, body").animate(
+              {
+                scrollTop: target.offset().top - 60
+              },
+              1000,
+              "easeInOutExpo"
+            );
+            return false;
+          }
+        }
+      });
+
+      mixitup(".barba-container #mix-wrapper", {
+        load: {
+          sort: "default:asc" /* default:asc */
+        },
+        // animation: {
+        //     duration: 700,
+        //     effects: 'fade translateY(600%) stagger(35ms)',
+        //     easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
+        //     reverseOut: true
+        //   },
+        classNames: {
+          block: "box" /* mixitup */,
+          elementFilter: "filter-btn" /* control */,
+          elementSort: "sort-btn" /* control */
+        },
+        selectors: {
+          target: ".mix-target" /* .mix */
+        }
+      });
+
+  Barba.Pjax.cacheEnabled = true;
+  Barba.Dispatcher.on("newPageReady", function() {
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+    
+  });
   
 })(jQuery);
 
