@@ -5,6 +5,10 @@
 
   }
 
+  .button-bar {
+      height: 5rem;
+  }
+
 
   /* General button style (reset) */
   button {
@@ -14,7 +18,7 @@
       color: inherit;
       background: none;
       cursor: pointer;
-      padding: 25px 80px;
+      padding: 0rem 8rem 4rem 8rem;
       display: inline-block;
       margin: 15px 30px;
       text-transform: uppercase;
