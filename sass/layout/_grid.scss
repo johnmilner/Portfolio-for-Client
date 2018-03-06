@@ -11,6 +11,11 @@
       max-width: 100%;
     }
 
+    @include respond(phone-bs-override) {
+      min-width: 100%;
+    }
+
+
   // &:not(:last-child) {    
   //     margin-bottom: $gutter-vertical;
 
@@ -21,6 +26,10 @@
 
   @include respond(tab-land) {
       max-width: 100%;
+  }
+
+  @include respond(tab-port-bs-override) {
+    min-width: 100%;
   }
 
   @include respond(desktop) {
