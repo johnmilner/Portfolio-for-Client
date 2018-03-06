@@ -12,13 +12,15 @@ var browserify = require('browserify'),
     es = require('event-stream'),
     glob = require("glob"),
     rename = require("gulp-rename"),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    minify = require('gulp-minify'),
+    uglify = require('gulp-uglify-es').default;
 
 /* pathConfig*/
-var entryPoint = './js/build.js',
+var entryPoint = './src/js/build.js',
     browserDir = './',
-    sassWatchPath = './sass/**/*.scss',
-    jsWatchPath = './js/**/*.js',
+    sassWatchPath = './src/sass/**/*.scss',
+    jsWatchPath = './src/js/**/*.js',
     htmlWatchPath = './**/*.html'
 /**/
 
@@ -71,10 +73,24 @@ var entryPoint = './js/build.js',
 // });
 
 
+// gulp.task('js', function() {
+//   return gulp.src('js/**/*.js'
+//     .pipe(concat('bundle.js'))
+//     .pipe(gulp.dest('./build/js'));
+// });
+
 gulp.task('js', function() {
-  return gulp.src('js/**/*.js')
-    .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('./build/js'));
+    return gulp.src([
+        './src/js/jquery-3.3.1-min.js', 
+        './src/js/jquery-1.4.1-easing-min.js', 
+        './src/js/mixitup.min.js',
+        './src/js/barba.min.js',
+        './src/js/build.js'
+        ])
+        .pipe(concat('bundle.js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('browser-sync', function () {
@@ -93,7 +109,7 @@ gulp.task('sass', function () {
         browsers: ['last 2 versions']
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./build/css'))
+    .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.reload({stream: true}));
 });
 
