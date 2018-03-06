@@ -202,48 +202,48 @@
     return transEffect;
   }
 
-        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (
-          location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-          location.hostname == this.hostname
-        ) {
-          var target = $(this.hash);
-          target = target.length
-            ? target
-            : $("[name=" + this.hash.slice(1) + "]");
-          if (target.length) {
-            $("html, body").animate(
-              {
-                scrollTop: target.offset().top - 60
-              },
-              1000,
-              "easeInOutExpo"
-            );
-            return false;
-          }
-        }
-      });
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  if (
+    location.pathname.replace(/^\//, "") ==
+      this.pathname.replace(/^\//, "") &&
+    location.hostname == this.hostname
+  ) {
+    var target = $(this.hash);
+    target = target.length
+      ? target
+      : $("[name=" + this.hash.slice(1) + "]");
+    if (target.length) {
+      $("html, body").animate(
+        {
+          scrollTop: target.offset().top - 60
+        },
+        1000,
+        "easeInOutExpo"
+      );
+      return false;
+    }
+  }
+});
 
-      mixitup(".barba-container #mix-wrapper", {
-        load: {
-          sort: "default:asc" /* default:asc */
-        },
-        // animation: {
-        //     duration: 700,
-        //     effects: 'fade translateY(600%) stagger(35ms)',
-        //     easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
-        //     reverseOut: true
-        //   },
-        classNames: {
-          block: "box" /* mixitup */,
-          elementFilter: "filter-btn" /* control */,
-          elementSort: "sort-btn" /* control */
-        },
-        selectors: {
-          target: ".mix-target" /* .mix */
-        }
-      });
+mixitup("#mix-wrapper", {
+  load: {
+    sort: "default:asc" /* default:asc */
+  },
+  // animation: {
+  //     duration: 700,
+  //     effects: 'fade translateY(600%) stagger(35ms)',
+  //     easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
+  //     reverseOut: true
+  //   },
+  classNames: {
+    block: "box" /* mixitup */,
+    elementFilter: "filter-btn" /* control */,
+    elementSort: "sort-btn" /* control */
+  },
+  selectors: {
+    target: ".mix-target" /* .mix */
+  }
+});
 
   Barba.Pjax.cacheEnabled = true;
   Barba.Dispatcher.on("newPageReady", function() {
