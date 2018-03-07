@@ -160,10 +160,10 @@ mixitup('.container', {
   load: {
   	filter: "all"
   },
-	animation: {
-    effects: 'fade rotateZ(-180deg)',
-    duration: 700
-  },
+	// animation: {
+  //   effects: 'fade rotateZ(-180deg)',
+  //   duration: 700
+  // },
   classNames: {
     block: 'button-bar',
     elementToggle: 'toggle-btn',
