@@ -136,23 +136,42 @@ function createProjectGrid() {
   }
 });
 
-mixitup(".container", {
+// mixitup(".container", {
+//   load: {
+//     filter: "all" /* default:asc */
+//   },
+//   "animation": {
+//     "duration": 250,
+//     "nudge": true,
+//     "reverseOut": false,
+//     "effects": "fade translateZ(-100px)"
+//   },
+//   classNames: {
+//     block: "button-bar", /* mixitup */
+//     elementFilter: "filter-btn" /* control */
+   
+//   },
+//   selectors: {
+//     target: ".mix-target" /* .mix */
+//   }
+// });
+
+mixitup('.container', {
   load: {
-    filter: "all" /* default:asc */
+  	filter: "all"
   },
-  animation: {
-      duration: 700,
-      effects: 'fade translateY(600%) stagger(35ms)',
-      easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
-      reverseOut: true
-    },
+	animation: {
+    effects: 'fade rotateZ(-180deg)',
+    duration: 700
+  },
   classNames: {
-    //block: ".box" /* mixitup */,
-    elementFilter: ".control" /* control */
-    // elementSort: "sort-btn" /* control */
+    block: 'button-bar',
+    elementToggle: 'toggle-btn',
+    elementFilter: 'filter-btn',
+    elementSort: 'sort-btn'
   },
   selectors: {
-    target: ".mix-target" /* .mix */
+    target: '.mix-target'
   }
 });
 

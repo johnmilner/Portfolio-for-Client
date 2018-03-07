@@ -41,11 +41,9 @@
       transition: all 0.3s;
   }
   
-  button:hover,
-  button:active,
-  button.filter-btn-active,
-  button.toggle-btn-active,
-  button.sort-btn-active {
-      color: #0e83cd;
-      background: #fff;
-  }
+.button-bar button.button-bar-filter-btn-active,
+.button-bar button.button-bar-toggle-btn-active,
+.button-bar button.button-bar-sort-btn-active {
+	color: #0e83cd;
+    background: #fff;
+}
