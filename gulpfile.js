@@ -83,6 +83,7 @@ gulp.task('js', function() {
     return gulp.src([
         './src/js/jquery-3.3.1-min.js', 
         './src/js/jquery-1.4.1-easing-min.js', 
+        './src/js/jquery.waypoints.js',
         './src/js/mixitup.min.js',
         './src/js/barba.min.js',
         './src/js/build.js'
