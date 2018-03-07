@@ -1,5 +1,5 @@
 /**
- * Created by Dmytro on 3/27/2016.
+ * Created by John on 3/6/2018.
  */
 var browserify = require('browserify'),
     gulp = require('gulp'),
