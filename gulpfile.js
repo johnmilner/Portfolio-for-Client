@@ -3,9 +3,11 @@
  */
 var browserify = require('browserify'),
     gulp = require('gulp'),
+    postcss    = require('gulp-postcss'),
+    cssnano = require('cssnano'),
     sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('autoprefixer'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer'),
     browserSync = require('browser-sync'),
@@ -103,12 +105,14 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('sass', function () {
+  var plugins = [
+    autoprefixer({browsers: ['last 2 versions']}),
+    cssnano()
+  ];
   return gulp.src(sassWatchPath)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-        browsers: ['last 2 versions']
-    }))
+    .pipe(postcss(plugins))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.reload({stream: true}));
